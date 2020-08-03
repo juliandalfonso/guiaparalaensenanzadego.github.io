@@ -9,7 +9,7 @@
     <circle id="Elipse_1" data-name="Elipse 1" cx="12.5" cy="12.5" r="12.5" transform="translate(27 23)" fill="#d9515d"/>
     <circle id="Elipse_2" data-name="Elipse 2" cx="12.5" cy="12.5" r="12.5" transform="translate(63 23)" fill="#f4c025"/>
     <circle id="Elipse_3" data-name="Elipse 3" cx="12.5" cy="12.5" r="12.5" transform="translate(99 23)" fill="#3ec930"/>
-    <text id="Arreglos" transform="translate(323 170)" fill="#f4c025" font-size="70" font-family="Consolas"><tspan x="-153.945" y="0">Arreglos</tspan></text>
-    <path id="icons8-source-code" d="M49.593,3.987a3.176,3.176,0,0,0-3.065,2.6l-12.7,63.522a3.176,3.176,0,1,0,6.228,1.241l12.7-63.522a3.176,3.176,0,0,0-3.164-3.84ZM18.682,16.7a3.176,3.176,0,0,0-2.624,1.377L2.584,37.131a3.176,3.176,0,0,0,0,3.672L16.058,59.86a3.177,3.177,0,1,0,5.186-3.672L9.067,38.967,21.244,21.747a3.176,3.176,0,0,0-2.562-5.05Zm49.894,0a3.176,3.176,0,0,0-2.469,5.05L78.284,38.967,66.106,56.188a3.177,3.177,0,1,0,5.186,3.672L84.766,40.8a3.176,3.176,0,0,0,0-3.672L71.292,18.075A3.176,3.176,0,0,0,68.575,16.7Z" transform="translate(279 219.615)" fill="#f4c025"/>
+    <text id="Arreglos" transform="translate(322 170)" fill="#f89406" font-size="70" font-family="Consolas"><tspan x="-153.945" y="0">Arreglos</tspan></text>
+    <path id="icons8-square-brackets" d="M7.182,4A3.182,3.182,0,0,0,4,7.182V70.818A3.182,3.182,0,0,0,7.182,74H23.091a3.182,3.182,0,1,0,0-6.364H10.364V10.364H23.091a3.182,3.182,0,1,0,0-6.364ZM54.909,4a3.182,3.182,0,1,0,0,6.364H67.636V67.637H54.909a3.182,3.182,0,1,0,0,6.364H70.818A3.182,3.182,0,0,0,74,70.819V7.182A3.182,3.182,0,0,0,70.819,4Z" transform="translate(283 217)" fill="#f89406"/>
   </g>
 </svg>
