@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="645" height="400" viewBox="0 0 645 400">
+  <defs>
+    <clipPath id="clip-Mod8">
+      <rect width="645" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="Mod8" clip-path="url(#clip-Mod8)">
+    <rect width="645" height="400" fill="#262a33"/>
+    <circle id="Elipse_1" data-name="Elipse 1" cx="12.5" cy="12.5" r="12.5" transform="translate(27 23)" fill="#d9515d"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="12.5" cy="12.5" r="12.5" transform="translate(63 23)" fill="#f4c025"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="12.5" cy="12.5" r="12.5" transform="translate(99 23)" fill="#3ec930"/>
+    <text id="Módulo_8" data-name="Módulo 8" transform="translate(323 173)" fill="#d9515d" font-size="70" font-family="Consolas"><tspan x="-153.945" y="0">Módulo 8</tspan></text>
+    <path id="icons8-control-panel" d="M10.364,4A6.411,6.411,0,0,0,4,10.364V67.636A6.411,6.411,0,0,0,10.364,74H67.636A6.411,6.411,0,0,0,74,67.636V10.364A6.411,6.411,0,0,0,67.636,4Zm0,6.364H67.636V67.636H10.364Zm9.545,6.364a3.183,3.183,0,0,0-3.182,3.182V32.636a3.183,3.183,0,0,0,3.182,3.182H32.636a3.183,3.183,0,0,0,3.182-3.182V19.909a3.183,3.183,0,0,0-3.182-3.182Zm25.455,0a3.183,3.183,0,0,0-3.182,3.182V32.636a3.183,3.183,0,0,0,3.182,3.182H58.091a3.183,3.183,0,0,0,3.182-3.182V19.909a3.183,3.183,0,0,0-3.182-3.182ZM19.909,42.182a3.183,3.183,0,0,0-3.182,3.182V58.091a3.183,3.183,0,0,0,3.182,3.182H32.636a3.183,3.183,0,0,0,3.182-3.182V45.364a3.183,3.183,0,0,0-3.182-3.182Zm25.455,0a3.183,3.183,0,0,0-3.182,3.182V58.091a3.183,3.183,0,0,0,3.182,3.182H58.091a3.183,3.183,0,0,0,3.182-3.182V45.364a3.183,3.183,0,0,0-3.182-3.182Z" transform="translate(284 216.087)" fill="#d9515d"/>
+  </g>
+</svg>

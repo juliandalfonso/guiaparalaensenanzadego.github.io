@@ -1,0 +1,80 @@
+/* body
+{
+     background: rgb(73,74,74);
+    background: radial-gradient(circle, rgba(73,74,74,1) 0%, rgba(37,42,51,0.9) 100%); 
+    #2f3339
+    #252A33
+} */
+
+
+
+#particles-js
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(-45deg, #252A33, #22252c, #484d58, #252A33);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    z-index: -10;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+p.separator {
+    line-height:1em;
+    border-bottom:1px solid green;
+}
+p.separator:before {
+    content:"OUTPUT";
+    position:relative;
+    left:50%;
+    margin-left:-2.5em;
+    padding:0 0.3em;
+    top:0.5em;
+    background:#252A33;
+    color: green;
+}
+
+.btn-color{
+    color: #262A33 !important; 
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    
+    
+    #headermodulo
+    {
+        height: 100%;
+    }
+    .btn-group {
+        width:100%;
+        
+        /* text-align: center; */
+    }
+}
+
+@media (min-width:768px)
+{
+    
+    #headermodulo
+    {
+        height: 100vh !important;
+    }
+}
