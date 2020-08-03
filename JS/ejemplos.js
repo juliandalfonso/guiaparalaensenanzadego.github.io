@@ -11,6 +11,12 @@ var scroll = new SmoothScroll('a[href*="#"]',
   offset: 100
 })
 
+//SORTABLEJS INIT------------------------------------------------
+
+
+Sortable.create(simpleList, { /* options */ });
+
+
 
 // INTROJSINIT--------------------------------------------
 
