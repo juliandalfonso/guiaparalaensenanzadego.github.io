@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="645" height="400" viewBox="0 0 645 400">
+  <defs>
+    <clipPath id="clip-Mod3">
+      <rect width="645" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="Mod3" clip-path="url(#clip-Mod3)">
+    <rect width="645" height="400" fill="#262a33"/>
+    <circle id="Elipse_1" data-name="Elipse 1" cx="12.5" cy="12.5" r="12.5" transform="translate(27 23)" fill="#d9515d"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="12.5" cy="12.5" r="12.5" transform="translate(63 23)" fill="#f4c025"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="12.5" cy="12.5" r="12.5" transform="translate(99 23)" fill="#3ec930"/>
+    <text id="Ciclos" transform="translate(323 167)" fill="#3ec930" font-size="70" font-family="Consolas"><tspan x="-115.459" y="0">Ciclos</tspan></text>
+    <path id="icons8-code" d="M8.364,4A6.362,6.362,0,0,0,2,10.364V74H84.727V10.364A6.362,6.362,0,0,0,78.364,4Zm0,19.091h70V67.636h-70Zm38.287,6.32a3.182,3.182,0,0,0-3.194,2.455L37.093,57.32a3.183,3.183,0,0,0,6.177,1.541l6.364-25.455a3.182,3.182,0,0,0-2.983-4ZM27.392,32.6a3.182,3.182,0,0,0-2.585,1.454l-7.538,11.31,7.538,11.31a3.182,3.182,0,1,0,5.295-3.53l-5.189-7.78L30.1,37.583A3.182,3.182,0,0,0,27.392,32.6Zm31.843,0a3.182,3.182,0,0,0-2.61,4.984l5.189,7.781-5.189,7.78a3.182,3.182,0,1,0,5.295,3.53l7.538-11.311L61.92,34.053A3.182,3.182,0,0,0,59.236,32.6Z" transform="translate(280 223.703)" fill="#3ec930"/>
+  </g>
+</svg>
