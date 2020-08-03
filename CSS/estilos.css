@@ -53,6 +53,21 @@ p.separator:before {
 }
 
 
+.full_modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .full_modal-content {
+    width: 100vw;
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    margin: 0 !important;
+  }
+
 
 
 
