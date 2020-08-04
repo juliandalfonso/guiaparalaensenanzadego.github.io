@@ -25,25 +25,54 @@ Sortable.create(simpleList, { /* options */ });
 // TERMINALSINIT----------------------------------------------
 
 //inicializamos las terminales "incluyen typedjs"
-//  var termynal = new Termynal('#termynal', { startDelay: 600 });
+//  var termynalEjemplo1 = new Termynal('#termynalEjemplo1', { startDelay: 600 });
 // var termynal2 = new Termynal('#termynal2', { startDelay: 600 });
 
 
 
-//QUERYSELECTORS---------------------------------------------
+//QUERYSELECTORS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+//------------------------------ query selectors del ejemplo 1----------------------------------
 const runejemplo_1 = document.querySelector('#runejemplo_1');
 const debugejemplo_1 = document.querySelector('#debugejemplo_1');
 const copyejemplo_1 = document.querySelector('#copyejemplo_1');
-const verificaEjercicioInput = document.querySelector('#verify');
+
+// Selecciona todos los botones que haya que quitarle el default--------------------------------------
+const previeneDefault = document.querySelector('.prev');
 
 
 
-//EVENTLISTENERS---------------------------------------------
+
+
+
+
+//------------------query selectors de los verificadores de ejercicios---------------------------
+
+
+
+
+
+
+
+
+
+//EVENTLISTENERS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// event listeners ejemplo 1-------------------------------------------------------------------
 runejemplo_1.addEventListener('click', runnerejemplo_1);
-runejemplo_1.addEventListener('click', prev);
+previeneDefault.addEventListener('click', prev);
 debugejemplo_1.addEventListener('click', debugerejemplo_1);
-copyejemplo_1.addEventListener('click', prev);
-verificaEjercicioInput.addEventListener('click',prev);
+
+
+
+
+
+// event listeners ejercicio 1----------------------------------------------------------------------
+
 
 
 
@@ -65,6 +94,7 @@ function runnerejemplo_1(e) {
 //Ejecuta IntroJS en el ejemplo_1 
 function debugerejemplo_1(e) {
   e.preventDefault();
+  console.log('entreeeee');
   introJs('#ejemplo_1').start();
 }
 

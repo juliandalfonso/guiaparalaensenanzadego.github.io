@@ -165,22 +165,39 @@
     <div class="container mt-4">
         <div id="ejemplo_1">
             <div class="card  shadow-lg">
-                <h5 class="card-title text-center py-2">Hola mundo!</h5>
+                <h5 class="card-title text-center py-2">animales.go</h5>
 
-                <div id="newtermynal" data-termynal class="mx-auto"
+                <div id="termynalEjemplo1" data-termynal class="mx-auto"
                     style=" margin: 0 !important; width: 100%; font-size: 3vh;">
 
-                    <pre class="prettyprint " style="background: #252A33; padding: 0 !important; " id="code1">
+<pre class="prettyprint " style="background: #252A33; padding: 0 !important; " id="code1">
+    <span>package main</span>
 
-    <span data-step="1" data-intro="Indica que es el paquete principal">package main</span>
+    <!-- colocas data-step="#" y el numero en orden que quieres que aparezca el comentario p.ej este sería el primero -->
+    <span data-step="1">import "fmt"</span>
 
-    <span data-step="2" data-intro="importamos la librería de GO">import "fmt"</span>
+    <!-- para agregar un comentario escribes data-intro="comentario aquí" -->
+    <span data-step="2" data-intro="Creamos la función bla bla bla">func main() {</span>
 
-    <span data-step="3" data-intro="Creamos la función">func main() {
-    fmt.Println("hello world")
-    }</span>
-                    </pre>
-
+        <span data-step="3" data-intro="declaramos la variable ba bla">var animal string</span>
+        <span>fmt.Println("Elige felino, reptil,pez")</span>
+        <span>fmt.Scanln(&animal)</span>
+        <span>if animal == "felino" {</span>
+        
+            <!-- también pueses seleccionar varias lineas de codigo metiendolas todas en un solo span -->
+            <span data-step="4" data-intro="comentario">
+                {
+                    fmt.Println("El animal es un felino")
+                } else if animal == "reptil" {
+                    fmt.Println("El animal es un reptil")
+                } else if animal == "pez" {
+                    fmt.Println("El animal es un pez")
+                } else {
+                    fmt.Println("El animal es de otra categoria")
+                }
+            }
+            </span>
+</pre>
                     <div id="rundivejemplo_1"> </div>
 
                 </div>
@@ -189,18 +206,18 @@
                         <div class="card-body">
                             <div class=" d-flex justify-content-around">
 
-                                <a href="#" class="btn btn-outline-info  mt-2" data-clipboard-target="#code1"
+                                <a href="#" class="btn btn-outline-info  mt-2 prev" data-clipboard-target="#code1"
                                     id="copyejemplo_1">
                                     <span class="text-center">copy</span>
                                     <i class="fas fa-copy ml-2"></i>
                                 </a>
 
-                                <a href="#" class="btn btn-outline-warning  mt-2" id="debugejemplo_1">
+                                <a href="#" class="btn btn-outline-warning  mt-2 prev" id="debugejemplo_1">
                                     <span class="text-center">Debug</span>
                                     <i class="fas fa-bug ml-2"></i>
                                 </a>
 
-                                <a href="#" class="btn btn-success  mt-2" id="runejemplo_1">
+                                <a href="#" class="btn btn-success  mt-2 prev" id="runejemplo_1">
                                     <span class="text-center">Run</span>
                                     <i class="fas fa-play ml-2"></i>
                                 </a>
@@ -250,7 +267,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <button class="btn btn-outline-success btn-block border-success" id="verify">Verificar<i
+                    <button class="btn btn-outline-success btn-block border-success prev" >Verificar<i
                             class="fas fa-check ml-2"></i></button>
                 </div>
             </div>
@@ -284,7 +301,7 @@
 
             </div>
             <div class="card-body">
-                <button class="btn btn-outline-success btn-block border-success" id="verify">Verificar<i
+                <button class="btn btn-outline-success btn-block border-success prev" >Verificar<i
                         class="fas fa-check ml-2"></i></button>
             </div>
         </div>
@@ -360,3 +377,4 @@
 
 
 </html>
+
