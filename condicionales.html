@@ -91,11 +91,11 @@
                         <a data-scroll href="#seccion_teoria"
                             class="btn d-block m-3 btn-outline-success border-success"><span
                                 class="text-center px-4 h3 d-block ">Teoría</span><i
-                                class="fas fa-glasses m-3 h3"></i></i></a>
+                                class="fas fa-glasses m-3 h3"></i></a>
                         <a data-scroll href="#seccion_ejemplos"
                             class="btn d-block m-3  btn-outline-warning border-warning"><span
                                 class="text-center px-4 h3 d-block ">Ejemplos</span><i
-                                class="fas fa-file-code m-3 h3"></i></i></a>
+                                class="fas fa-file-code m-3 h3"></i></a>
                         <a data-scroll href="#seccion_ejercicios"
                             class="btn d-block m-3  btn-outline-danger  border-danger"><span
                                 class="text-center px-4 h3 d-block">Ejercicios</span><i
@@ -155,80 +155,169 @@
     <!-- division de secciones -->
     <div style="height: 200px;"></div>
 
-
-    <!--------------------------------------------------- SECCION DE EJEMPLOS ---------------------------------------------->
+<!--------------------------------------------------- SECCION DE EJEMPLOS ---------------------------------------------->
     
     
     <h1 id="seccion_ejemplos" class="display-2 text-center text-warning mx-auto col-12" style="font-size: 10vw;">Ejemplos</h1>
 
 
-    <div class="container mt-4">
-        <div id="ejemplo_1">
-            <div class="card  shadow-lg">
-                <h5 class="card-title text-center py-2">animales.go</h5>
+    <!---------------------------------------------------------BOTONES EJEMPLOS  ------------------------------------------------->
+    
 
-                <div id="termynalEjemplo1" data-termynal class="mx-auto"
-                    style=" margin: 0 !important; width: 100%;">
+    <div class="container text-center">
+        <!-- BOTON EJEMPLO 1 -->
+        <button type="button" data-toggle="modal" data-target="#ejemplo1Modal"
+            class="btn text-center m-3 btn-outline-warning border-warning"><span class="text-center px-4 h3 d-block">Ejemplo 1</span><i
+                                class="fas fa-file-code m-3 h3"></i></button>
+        <!-- BOTON EJEMPLO 2 -->
+        <button type="button" data-toggle="modal" data-target="#ejemplo2Modal"
+            class="btn text-center m-3 btn-outline-warning border-warning"><span class="text-center px-4 h3 d-block">Ejemplo 2</span><i
+                                class="fas fa-file-code m-3 h3"></i></button>
 
-<pre class="prettyprint " style="background: #252A33; padding: 0 !important; font-size: 2vh;" id="code1">
-    <span>package main</span>
+        <!-- BOTON EJEMPLO 3 -->
+        <button type="button" data-toggle="modal" data-target="#ejemplo3Modal"
+            class="btn text-center m-3 btn-outline-warning border-warning"><span class="text-center px-4 h3 d-block">Ejemplo 3</span><i
+                                class="fas fa-file-code m-3 h3"></i></button>
+        <!-- BOTON EJEMPLO 4 -->
+        <button type="button" data-toggle="modal" data-target="#ejemplo4Modal"
+            class="btn text-center m-3 btn-outline-warning border-warning"><span class="text-center px-4 h3 d-block">Ejemplo 4</span><i
+                                class="fas fa-file-code m-3 h3"></i></button>
+        <!-- BOTON EJEMPLO 5 -->
+        <button type="button" data-toggle="modal" data-target="#ejemplo5Modal"
+            class="btn text-center m-3 btn-outline-warning border-warning"><span class="text-center px-4 h3 d-block">Ejemplo 5</span><i
+                                class="fas fa-file-code m-3 h3"></i></button>
+        <!-- BOTON EJEMPLO 6 -->
+        <button type="button" data-toggle="modal" data-target="#ejemplo6Modal"
+            class="btn text-center m-3 btn-outline-warning border-warning"><span class="text-center px-4 h3 d-block">Ejemplo 6</span><i
+                                class="fas fa-file-code m-3 h3"></i></button>
+    </div>
 
-    <!-- colocas data-step="#" y el numero en orden que quieres que aparezca el comentario p.ej este sería el primero -->
-    <span data-step="1">import "fmt"</span>
 
-    <!-- para agregar un comentario escribes data-intro="comentario aquí" -->
-    <span data-step="2" data-intro="Creamos la función bla bla bla">func main() {</span>
 
-        <span data-step="3" data-intro="declaramos la variable ba bla">var animal string</span>
-        <span>fmt.Println("Elige felino, reptil,pez")</span>
-        <span>fmt.Scanln(&animal)</span>
-        <span>if animal == "felino" {</span>
-        
-            <!-- también pueses seleccionar varias lineas de codigo metiendolas todas en un solo span -->
-            <span data-step="4" data-intro="comentario">
-                {
-                    fmt.Println("El animal es un felino")
-                } else if animal == "reptil" {
-                    fmt.Println("El animal es un reptil")
-                } else if animal == "pez" {
-                    fmt.Println("El animal es un pez")
-                } else {
-                    fmt.Println("El animal es de otra categoria")
-                }
-            }
-            </span>
-</pre>
-                    <div id="rundivejemplo_1"> </div>
 
-                </div>
-                <div class="">
-                    <div class="container">
-                        <div class="card-body">
-                            <div class=" d-flex justify-content-around">
+    <!-- MODAL EJEMPLO 1  -->
+    <div class="modal fade" id="ejemplo1Modal" tabindex="-1" role="dialog" aria-labelledby="ejemplo1ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog full_modal-dialog">
+                <div class="modal-content full_modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: white !important;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body container-fluid" style="padding: 0; ">
 
-                                <a href="#" class="btn btn-outline-info  mt-2 prev" data-clipboard-target="#code1"
-                                    id="copyejemplo_1">
-                                    <span class="text-center">copy</span>
-                                    <i class="fas fa-copy ml-2"></i>
-                                </a>
+                        <!-- frame que llama las diapositivas -->
+                        <iframe src="ejemplos/condicionales/animales.html" style="border:none; width: 100%; height: 80vh;" frameborder="0"></iframe>
 
-                                <a href="#" class="btn btn-outline-warning  mt-2 prev" id="debugejemplo_1">
-                                    <span class="text-center">Debug</span>
-                                    <i class="fas fa-bug ml-2"></i>
-                                </a>
 
-                                <a href="#" class="btn btn-success  mt-2 prev" id="runejemplo_1">
-                                    <span class="text-center">Run</span>
-                                    <i class="fas fa-play ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
     </div>
+
+
+    <!-- MODAL EJEMPLO 2  -->
+    <div class="modal fade" id="ejemplo2Modal" tabindex="-1" role="dialog" aria-labelledby="ejemplo1ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog full_modal-dialog">
+                <div class="modal-content full_modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: white !important;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body container-fluid" style="padding: 0; ">
+
+                        <!-- frame que llama las diapositivas -->
+                        <iframe src="ejemplos/condicionales/edad.html" style="border:none; width: 100%; height: 80vh;" frameborder="0"></iframe>
+
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- MODAL EJEMPLO 3  -->
+    <div class="modal fade" id="ejemplo3Modal" tabindex="-1" role="dialog" aria-labelledby="ejemplo1ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog full_modal-dialog">
+                <div class="modal-content full_modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: white !important;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body container-fluid" style="padding: 0; ">
+
+                        <!-- frame que llama las diapositivas -->
+                        <iframe src="ejemplos/condicionales/pares.html" style="border:none; width: 100%; height: 80vh;" frameborder="0"></iframe>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- MODAL EJEMPLO 4  -->
+    <div class="modal fade" id="ejemplo4Modal" tabindex="-1" role="dialog" aria-labelledby="ejemplo1ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog full_modal-dialog">
+                <div class="modal-content full_modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: white !important;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body container-fluid" style="padding: 0; ">
+
+                        <!-- frame que llama las diapositivas -->
+                        <iframe src="ejemplos/condicionales/calificaciones.html" style="border:none; width: 100%; height: 80vh;" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- MODAL EJEMPLO 5  -->
+    <div class="modal fade" id="ejemplo5Modal" tabindex="-1" role="dialog" aria-labelledby="ejemplo1ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog full_modal-dialog">
+                <div class="modal-content full_modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: white !important;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body container-fluid" style="padding: 0; ">
+
+                        <!-- frame que llama las diapositivas -->
+                        <iframe src="ejemplos/condicionales/digito.html" style="border:none; width: 100%; height: 80vh;" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- MODAL EJEMPLO 6  -->
+    <div class="modal fade" id="ejemplo6Modal" tabindex="-1" role="dialog" aria-labelledby="ejemplo1ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog full_modal-dialog">
+                <div class="modal-content full_modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: white !important;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body container-fluid" style="padding: 0; ">
+
+                        <!-- frame que llama las diapositivas -->
+                        <iframe src="ejemplos/condicionales/centimetros.html" style="border:none; width: 100%; height: 80vh;" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    
     <!--------------------------------------------------- FIN SECCION DE EJEMPLOS ---------------------------------------------->
 
     <!-- Division de secciones -->
@@ -239,14 +328,11 @@
     <!--------------------------------------------------- SECCION DE EJERCICIOS ---------------------------------------------->
 
 
-    <h1 id="seccion_ejercicios" class="display-2 text-center text-danger mx-auto col-12 my-4" style="font-size: 10vw;">
-        Ejercicios</h1>
-
-
+    <h1 id="seccion_ejercicios" class="display-2 text-center text-danger mx-auto col-12 my-4" style="font-size: 10vw;">Ejercicios</h1>
 
     <!-- comienza ejercicio #1     -->
     <div class="container my-4">
-        <div class="display-4 my-4 text-danger text-center">Ejercicio 1</div>
+        <h1 class="display-4 my-4 text-danger text-center">Ejercicio 1</h1>
         <div class="card">
             <div class="container">
                 <div class="card-title">
@@ -279,40 +365,33 @@
 
 
     <!-- comienza ejercicio #2 -->
-    <div class="container my-4">
-        <div class="display-4 my-4 text-danger text-center">Ejercicio 2</div>
-        <div class="card">
-            <div class="card-title">
-                <h1 class="h4 my-2 text-center">Digita la sentencia que hace falta para imprimir "hello world"</h1>
-            </div>
-            <div id="termynal" data-termynal class="mx-auto"
-                style=" margin: 0 !important; width: 100%; font-size: 3vh;">
+<div class="container my-4">
+    <h1 class="display-4 my-4 text-danger text-center">Ejercicio 2</h1>
 
-                <pre class="prettyprint " style="background: #252A33; padding: 0 !important; " id="code1">
+    <div class="card">
+        <div class="card-title">
+            <h1 class="h4 my-2 text-center">Digita la sentencia que hace falta para imprimir "hello world"</h1>
+        </div>
+        
+        <div id="termynal" data-termynal class="mx-auto" style=" margin: 0 !important; width: 100%; font-size: 3vh;">
+
+<pre class="prettyprint " style="background: #252A33; padding: 0 !important; ">
 
     <span>package main</span>
     <span>import "fmt"</span>
     <span>func main() {
-        <span><input type="text" class="bg-dark text-light"></span>
+    <span><input type="text" class="bg-dark text-light"></span>
     }</span>
-            </pre>
-
-                <div id="rundivejemplo_1"> </div>
-
-            </div>
-            <div class="card-body">
-                <button class="btn btn-outline-success btn-block border-success prev" >Verificar<i
-                        class="fas fa-check ml-2"></i></button>
-            </div>
+    </pre>
+        </div>
+        <div class="card-body">
+            <button class="btn btn-outline-success btn-block border-success prev" >Verificar<i class="fas fa-check ml-2"></i></button>
         </div>
     </div>
+</div>
     <!-- fin ejercicio  #2 -->
 <!---------------------------------------------------FIN SECCION DE EJERCICIOS ---------------------------------------------->
 
-
-
-    <!-- Division de secciones -->
-    <div class="container" style="height: 800px;"></div>
 
 
 

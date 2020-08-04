@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+    
+
+
+    <!-- INTROJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs.min.css">
+    <link rel="stylesheet" href="../../CSS/introjs-flattener.css">
+
+    <!-- BOOTSTRAP 4 -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+    <!-- BOOTSWATCH -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css">
+
+
+    <!-- ANIMATE.CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+
+    <!-- TERMYNALJS -->
+    <link rel="stylesheet" href="../../CSS/termynal.css">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../../CSS/estilos.css">
+
+
+
+</head>
+<body>
+
+<div id="cardEjemplo1" class="card my-auto">
+
+    <!-- titulo del ejemplo -->
+    <h5 class="card-title text-center py-2">centimetros.go</h5>
+   
+    <!-- terminal del ejemplo1 -->
+    <div id="termynalEjemplo1" data-termynal class="mx-auto" style=" margin: 0 !important; width: 100%;">
+
+<!-- ---------------------------codigo del ejemplo 1 ----------------------------------------------------------------->
+<pre class="prettyprint" style="background: #252A33; padding: 0 !important; font-size: 2vh;" id="codigoEjemplo1">
+    <span >package main</span>
+
+    <span>import "fmt"</span>
+    
+    <span>func main() {</span>
+        <span data-setp="1" data-intro="Se declara la variable x como entero">var x int</span>
+        <span data-step="2" data-intro="Se declaran las variables como flotantes">var pulgadas, kilo, distancia, peso float32</span>
+    
+        <span data-step="3" data-intro="Se crea el menú para el usuario">fmt.Println("Que desea convertir, distancia o peso?")
+        fmt.Println("Escriba 1 para distancia o 2 para peso")
+        fmt.Scanf("%b", &x)</span>
+    
+        <span data-step="4" data-intro="Esto indica que la variable a evaluar en todos los casos va a ser x">switch x {</span>
+        <span data-step="5" data-intro="Si el usuario ingresa 1 se ejcutan las siguientes lineas">case 1:</span>
+            <span>fmt.Println("Ingrese la distancia en centimetros")</span>
+            <span data-step="6" data-intro="Se le pide al usuario la distancia en cm">fmt.Scanf("%b", &distancia)</span>
+            <span data-step "7" data-intro="Se le asigna a pulgada el valor de la division entre el dato ingresado por el usuario y 2.54">pulgadas = distancia / 2.54</span>
+            <span data-step="8" data-intro="Se imprime el resultado de la operación">fmt.Printf("Las pulgadas son: %b ", pulgadas)</span>
+            <span data-step="9" data-intro="La palabra break se usa para indicar que termina el caso">break</span>
+        <span data-step="10" data-intro="Se hace lo mismo que en el caso 1, pero aqui se pase de libras a kilos">case 2:
+            fmt.Println("Ingrese el peso en libras")
+            fmt.Scanf("%b", &peso)
+            kilo = peso * (1 / 2.21)
+            fmt.Printf("Las kilogramos son: %b", kilo)
+            break</span>
+        <span data-step="11" data-intro="El default se utiliza como ultimo caso, y solo se toma en cuaenta cuando no se ha cumplido ninguno de los casos anteriores">default:
+            fmt.Println("Opcion no valida")</span>
+        }
+    
+    }
+</pre>
+
+    <!-- OUTPUT del ejemplo 1 generado con javascript -->
+    <div id="rundivejemplo_1"> </div>
+
+        </div>
+        
+            <div class="card-body container">
+                <div class=" d-flex justify-content-around">
+
+                    <a href="#" class="btn btn-outline-info  mt-2 prev" data-clipboard-target="#codigoEjemplo1"
+                        id="copyejemplo_1">
+                        <span class="text-center">copy</span>
+                        <i class="fas fa-copy ml-2"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-warning  mt-2 prev" id="debugejemplo_1">
+                        <span class="text-center">Debug</span>
+                        <i class="fas fa-bug ml-2"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-success  mt-2 prev" id="runejemplo_1">
+                        <span class="text-center">Run</span>
+                        <i class="fas fa-play ml-2"></i>
+                    </a>
+                </div>
+            </div>
+ 
+
+</div>
+
+
+
+
+<!-- BOOTSTRAP 4 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+
+<!-- PRETTIFYJS -->
+<script
+src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=go&amp;skin=desert">
+</script>
+
+<!-- INTROJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.min.js"></script>
+
+
+<!-- TERMYNALJS -->
+<script src="../../JS/termynal.js"></script>
+
+
+<!-- AOSJS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!-- CLIPBOARDJS -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+
+<!-- tippy.js -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+
+<!-- SMOOTHSCROLLING -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.js"
+integrity="sha512-vfE8OCUETP038fi2pHsLeJC/5xd48FyLsATJLulbdsCRBXgRWxA+0K9he4GClcPjT24vMJk1mFMFbjYS9J7NpA=="
+crossorigin="anonymous"></script>
+
+<!-- SortableJS -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+
+<script>
+    AOS.init();
+    var copyclipEjemplo1 = new ClipboardJS('#copyejemplo_1');
+
+    //------------------------------ query selectors del ejemplo 1----------------------------------
+const runejemplo_1 = document.querySelector('#runejemplo_1');
+const debugejemplo_1 = document.querySelector('#debugejemplo_1');
+const copyejemplo_1 = document.querySelector('#copyejemplo_1');
+
+// Selecciona todos los botones que haya que quitarle el default--------------------------------------
+const previeneDefault = document.getElementsByClassName('prev');
+
+// event listeners ejemplo 1-------------------------------------------------------------------
+runejemplo_1.addEventListener('click', runnerejemplo_1);
+
+debugejemplo_1.addEventListener('click', debugerejemplo_1);
+
+//previene la funcion por defecto de todos los nodos seleccionados con la clase prev
+for (var i=0;i<previeneDefault.length; i++) {
+  previeneDefault[i].addEventListener('click', prev);
+}
+
+//FUNCTIONS---------------------------------------------
+
+//crea un nuevo elemento en la terminal del ejemplo_1 y y lo agrega
+function runnerejemplo_1(e) {
+  
+  e.preventDefault();
+
+  e.target.removeEventListener(e.type, arguments.callee);//borramos el event listener para que no se vuelva a ejecutar esta funcion
+ 
+  document.getElementById("rundivejemplo_1").insertAdjacentHTML("afterend",
+    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>hello world!</p></span>");
+  document.querySelector('#prompt').className = 'animate__animated animate__bounce text-success ml-4';
+}
+
+
+//Ejecuta IntroJS en el ejemplo_1 
+function debugerejemplo_1(e) {
+  e.preventDefault();
+  introJs().start();
+}
+
+//funcion que elimina todas las funciones por defecto 
+function prev(e) {
+  e.preventDefault();
+}
+
+
+// funcion que muestra mensaje "copiado!" al dar click en el boton copy
+tippy('#copyejemplo_1', {
+  content: 'copiado!',
+  trigger: 'click'
+});
+
+
+
+// funcion que borra la seleccion una vez copiada
+copyclipEjemplo1.on('success', function (e) {
+  e.clearSelection();
+});
+
+
+
+</script>
+
+</body>
+
+
+</html>
+
