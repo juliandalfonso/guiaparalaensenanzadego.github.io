@@ -3,7 +3,7 @@ AOS.init();
 
 // CLIPBOARDJSINIT----------------------------------------------
 
-var copyclip1 = new ClipboardJS('#copyejercicio1');
+var copyclip1 = new ClipboardJS('#copyejemplo_1');
 
 // SMOOTHSCROLLING--------------------------------------------------
 var scroll = new SmoothScroll('a[href*="#"]', 
@@ -31,42 +31,42 @@ Sortable.create(simpleList, { /* options */ });
 
 
 //QUERYSELECTORS---------------------------------------------
-const runejercicio1 = document.querySelector('#runejercicio1');
-const debugejercicio1 = document.querySelector('#debugejercicio1');
-const copyejercicio1 = document.querySelector('#copyejercicio1');
+const runejemplo_1 = document.querySelector('#runejemplo_1');
+const debugejemplo_1 = document.querySelector('#debugejemplo_1');
+const copyejemplo_1 = document.querySelector('#copyejemplo_1');
 const verificaEjercicioInput = document.querySelector('#verify');
 
 
 
 //EVENTLISTENERS---------------------------------------------
-runejercicio1.addEventListener('click', runnerEjercicio1);
-runejercicio1.addEventListener('click', prev);
-debugejercicio1.addEventListener('click', debugerEjercicio1);
-copyejercicio1.addEventListener('click', prev);
+runejemplo_1.addEventListener('click', runnerejemplo_1);
+runejemplo_1.addEventListener('click', prev);
+debugejemplo_1.addEventListener('click', debugerejemplo_1);
+copyejemplo_1.addEventListener('click', prev);
 verificaEjercicioInput.addEventListener('click',prev);
 
 
 
 //FUNCTIONS---------------------------------------------
 
-//crea un nuevo elemento en la terminal del ejercicio1 y y lo agrega
-function runnerEjercicio1(e) {
+//crea un nuevo elemento en la terminal del ejemplo_1 y y lo agrega
+function runnerejemplo_1(e) {
   
   e.preventDefault();
   console.log('entramos?');
 
   e.target.removeEventListener(e.type, arguments.callee);//borramos el event listener para que no se vuelva a ejecutar esta funcion
  
-  document.getElementById("rundivejercicio1").insertAdjacentHTML("afterend",
+  document.getElementById("rundivejemplo_1").insertAdjacentHTML("afterend",
     "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>hello world!</p></span>");
   document.querySelector('#prompt').className = 'animate__animated animate__bounce text-success ml-4';
 }
 
 
-//Ejecuta IntroJS en el ejercicio1 
-function debugerEjercicio1(e) {
+//Ejecuta IntroJS en el ejemplo_1 
+function debugerejemplo_1(e) {
   e.preventDefault();
-  introJs('#ejercicio1').start();
+  introJs('#ejemplo_1').start();
 }
 
 //funcion que elimina todas las funciones por defecto 
@@ -77,7 +77,7 @@ function prev(e) {
 
 
 // funcion que muestra mensaje "copiado!" al dar click en el boton copy
-tippy('#copyejercicio1', {
+tippy('#copyejemplo_1', {
   content: 'copiado!',
   trigger: 'click'
 });
