@@ -25,7 +25,7 @@ Sortable.create(simpleList, { /* options */ });
 // TERMINALSINIT----------------------------------------------
 
 //inicializamos las terminales "incluyen typedjs"
-// var termynal = new Termynal('#termynal', { startDelay: 600 });
+//  var termynal = new Termynal('#termynal', { startDelay: 600 });
 // var termynal2 = new Termynal('#termynal2', { startDelay: 600 });
 
 
@@ -34,6 +34,7 @@ Sortable.create(simpleList, { /* options */ });
 const runejercicio1 = document.querySelector('#runejercicio1');
 const debugejercicio1 = document.querySelector('#debugejercicio1');
 const copyejercicio1 = document.querySelector('#copyejercicio1');
+const verificaEjercicioInput = document.querySelector('#verify');
 
 
 
@@ -42,6 +43,7 @@ runejercicio1.addEventListener('click', runnerEjercicio1);
 runejercicio1.addEventListener('click', prev);
 debugejercicio1.addEventListener('click', debugerEjercicio1);
 copyejercicio1.addEventListener('click', prev);
+verificaEjercicioInput.addEventListener('click',prev);
 
 
 
