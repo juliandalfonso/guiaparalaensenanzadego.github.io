@@ -5,7 +5,10 @@
     #2f3339
     #252A33
 } */
-
+html
+{
+    z-index: -1;
+}
 
 
 #particles-js
