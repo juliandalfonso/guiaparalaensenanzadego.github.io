@@ -1,12 +1,14 @@
 // AOSINIT--------------------------------------------------
 
-setTimeout(function() { aosInit(); }, 4000);
+AOS.init();
+
+// setTimeout(function() { aosInit(); }, 4000);
 
 // INTROJSINIT--------------------------------------------
 
 // introJs().start();
 // TERMINALSINIT----------------------------------------------
-var termynal = new Termynal('#termynal', { typeDelay: 10 })
+// var termynal = new Termynal('#termynal', { typeDelay: 10 })
 
 
 
@@ -19,10 +21,10 @@ var termynal = new Termynal('#termynal', { typeDelay: 10 })
 
 //FUNCTIONS---------------------------------------------
    
-function aosInit()
-{
-  AOS.init();
-}
+// function aosInit()
+// {
+//   AOS.init();
+// }
     
 
 
@@ -33,3 +35,5 @@ $(document).ready(function(){
       $(document.body).css('padding-top', $('#topnavbar').height() + 10);
   });
 });
+
+

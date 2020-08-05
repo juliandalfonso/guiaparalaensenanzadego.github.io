@@ -32,14 +32,6 @@
   <link rel="stylesheet" href="CSS/estilos.css">
 
 
-  <style>
-    html,body
-{
-    overflow: hidden;
-}
-
-  </style>
-
 </head>
 
 <body>
@@ -47,8 +39,8 @@
 
  <!-- NAVBAR -->
  <nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark bg-dark" id="topnavbar">
-  <a class="navbar-brand text-info text-center" href="#"><img class="w-25 mr-2" src="IMG/icons8-golang.svg"
-          alt="">GO</a>
+  <a class="text-left" href="#"><img style="width: 25%;" src="IMG/UTP_nav_logo.svg"
+          alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -85,34 +77,42 @@
 
  <div class="cuerpo">
 
-  <div class="container vh-50 d-flex align-items-center">
-    <div class="container p-4">
-      <div id="termynal" data-termynal class="mx-auto shadow-lg">
-        <span data-ty="input" data-ty-prompt="">Bienvenido a la Guía Para La Enseñanza De Go</span>
-        <span data-ty="input" data-ty-prompt="">Empecemos a Aprender!</span>
-        <span data-ty="input" data-ty-prompt=" "></span>
-        
+
+  <!-- card del header -->
+  <div class="container p-4 mt-4 text-center col-md-6">
+    <div class="card">
+      <img src="IMG/svgMods/UTP_header_logo.svg" class=" rounded shadow card-img-top" alt="">
+      <div class="card-body text-center" style="padding: 1em;">
+        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-dark btn-block">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptate consectetur saepe autem repellat eligendi accusantium cupiditate ducimus incidunt suscipit eum, nam culpa! Qui, dicta aspernatur sit aut illum porro dolorum enim corrupti, assumenda nam animi illo fuga maxime iusto suscipit quam, iste culpa. Perferendis cupiditate placeat atque ut voluptas?
+          </div>
+        </div>
       </div>
     </div>
-</div>
+  </div>
 
   <div class="container">
    
     <div class="row">
       
+   
+
       <!-- MODULO 1 -->
-      <div class="container col-lg-6 mt-4" data-aos="flip-left">
+      <div class="container col-md-4 mt-4" data-aos="flip-right">
         <div class="card shadow">
-          <img src="IMG/svgMods/Mod1.svg" alt="" img class="img-fluid">
-          <div class="card-body text-center"> 
-           <a href="variables.html" class="btn btn-success btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+          <img src="IMG/svgMods/Mod1.svg" alt="" class="img-fluid">
+          <div class="card-body text-center">
+            <a href="condicionales.html" class="btn btn-success btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
           </div>
         </div>
       </div>
-     
 
       <!-- MODULO 2 -->
-      <div class="container col-lg-6 mt-4" data-aos="flip-right">
+      <div class="container col-md-4 mt-4" data-aos="flip-right">
         <div class="card shadow">
           <img src="IMG/svgMods/Mod2.svg" alt="" class="img-fluid">
           <div class="card-body text-center">
@@ -123,18 +123,18 @@
 
       
       <!-- MODULO 3 -->
-      <div class="container col-lg-6 mt-4" data-aos="flip-left">
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
         <div class="card shadow">
           <img src="IMG/svgMods/Mod3.svg" alt="" class="img-fluid">
           <div class="card-body text-center">
-            <a href="#" class="btn btn-warning btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+            <a href="#" class="btn btn-success btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
           </div>
         </div>
       </div>  
       
 
       <!-- MODULO 4 -->
-      <div class="container col-lg-6 mt-4" data-aos="flip-left">
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
         <div class="card shadow">
           <img src="IMG/svgMods/Mod4.svg" alt="" class="img-fluid">
           <div class="card-body text-center"> 
@@ -145,22 +145,85 @@
      
 
       <!-- MODULO 5 -->
-      <div class="container col-lg-6 mt-4" data-aos="flip-right">
+      <div class="container col-md-4 mt-4" data-aos="flip-right">
         <div class="card shadow">
           <img src="IMG/svgMods/Mod5.svg" alt="" class="img-fluid">
           <div class="card-body text-center">
-            <a href="#" class="btn btn-danger btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+            <a href="#" class="btn btn-warning btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
           </div>
         </div>
       </div>
 
       
       <!-- MODULO 6 -->
-      <div class="container col-lg-6 mt-4" data-aos="flip-left">
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
         <div class="card shadow">
           <img src="IMG/svgMods/Mod6.svg" alt="" class="img-fluid">
           <div class="card-body text-center">
+            <a href="#" class="btn btn-warning btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+          </div>
+        </div>
+      </div>  
+
+
+      <!-- MODULO 7 -->
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
+        <div class="card shadow">
+          <img src="IMG/svgMods/Mod7.svg" alt="" class="img-fluid">
+          <div class="card-body text-center">
             <a href="#" class="btn btn-danger btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+          </div>
+        </div>
+      </div>  
+
+      <!-- MODULO 8 -->
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
+        <div class="card shadow">
+          <img src="IMG/svgMods/Mod8.svg" alt="" class="img-fluid">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-danger btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+          </div>
+        </div>
+      </div>  
+
+
+      <!-- MODULO 9 -->
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
+        <div class="card shadow">
+          <img src="IMG/svgMods/Mod9.svg" alt="" class="img-fluid">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-danger btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+          </div>
+        </div>
+      </div>  
+
+      <!-- MODULO 10 -->
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
+        <div class="card shadow">
+          <img src="IMG/svgMods/Mod10.svg" alt="" class="img-fluid">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-secondary btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+          </div>
+        </div>
+      </div>  
+
+      <!-- MODULO 11 -->
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
+        <div class="card shadow">
+          <img src="IMG/svgMods/Mod11.svg" alt="" class="img-fluid">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-secondary btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+          </div>
+        </div>
+      </div>  
+
+
+      <!-- MODULO 12 -->
+      <div class="container col-md-4 mt-4" data-aos="flip-left">
+        <div class="card shadow">
+          <img src="IMG/svgMods/Mod12.svg" alt="" class="img-fluid">
+          <div class="card-body text-center">
+            <a href="#" class="btn btn-secondary btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
           </div>
         </div>
       </div>  
@@ -211,33 +274,6 @@
 
   <!-- CUSTOMJS -->
   <script src="JS/main.js"></script>
-
-
-
-  <script>
-    
-</script>
-
-  <script>
-
-    //animacion que no permite que el usuario haga scroll los primeros 3,5 segundos
-    $(function(){
-  setTimeout(function(){
-    $('html, body')
-    .css({
-      'overflow': 'auto'
-    })
-    // .animate({
-    //   scrollTop: $('.myDiv').offset().top
-    // }, 2000);
-  }, 3500);
-  
-  
-});
-  </script>
-
-
-
 
 
 </body>

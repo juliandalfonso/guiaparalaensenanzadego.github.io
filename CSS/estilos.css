@@ -15,7 +15,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(-45deg, #252A33, #22252c, #484d58, #252A33);
+    background: linear-gradient(-45deg, #252A33, #474a52, #484d58, #252A33);
 	background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     z-index: -10;
@@ -67,6 +67,17 @@ p.separator:before {
     border-radius: 0;
     margin: 0 !important;
   }
+
+  .border-3 {
+    border-width:3px !important;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
 
 
 
