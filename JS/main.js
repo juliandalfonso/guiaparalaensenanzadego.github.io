@@ -2,7 +2,6 @@
 
 AOS.init();
 
-// setTimeout(function() { aosInit(); }, 4000);
 
 // INTROJSINIT--------------------------------------------
 
@@ -20,12 +19,6 @@ AOS.init();
   
 
 //FUNCTIONS---------------------------------------------
-   
-// function aosInit()
-// {
-//   AOS.init();
-// }
-    
 
 
 //AJUSTA LA POSICION DEL NAVBAR FIXED-TOP
