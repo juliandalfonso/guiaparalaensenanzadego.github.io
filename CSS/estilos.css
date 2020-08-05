@@ -68,6 +68,17 @@ p.separator:before {
     margin: 0 !important;
   }
 
+  .border-3 {
+    border-width:3px !important;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
 
 
 

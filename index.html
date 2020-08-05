@@ -32,14 +32,6 @@
   <link rel="stylesheet" href="CSS/estilos.css">
 
 
-  <style>
-    html,body
-{
-    overflow: hidden;
-}
-
-  </style>
-
 </head>
 
 <body>
@@ -47,8 +39,8 @@
 
  <!-- NAVBAR -->
  <nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark bg-dark" id="topnavbar">
-  <a class="navbar-brand text-info text-center" href="#"><img class="w-25 mr-2" src="IMG/icons8-golang.svg"
-          alt="">GO</a>
+  <a class="text-left" href="#"><img style="width: 25%;" src="IMG/UTP_nav_logo.svg"
+          alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -94,16 +86,17 @@
    
     <div class="row">
       
+   
+
       <!-- MODULO 1 -->
-      <div class="container col-md-4 mt-4" data-aos="flip-left">
+      <div class="container col-md-4 mt-4" data-aos="flip-right">
         <div class="card shadow">
-          <img src="IMG/svgMods/Mod1.svg" alt="" img class="img-fluid">
-          <div class="card-body text-center"> 
-           <a href="variables.html" class="btn btn-success btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
+          <img src="IMG/svgMods/Mod1.svg" alt="" class="img-fluid">
+          <div class="card-body text-center">
+            <a href="condicionales.html" class="btn btn-success btn-block ">Ver<i class="fas ml-2 fa-code"></i></a>
           </div>
         </div>
       </div>
-     
 
       <!-- MODULO 2 -->
       <div class="container col-md-4 mt-4" data-aos="flip-right">
@@ -268,33 +261,6 @@
 
   <!-- CUSTOMJS -->
   <script src="JS/main.js"></script>
-
-
-
-  <script>
-    
-</script>
-
-  <script>
-
-    //animacion que no permite que el usuario haga scroll los primeros 3,5 segundos
-    $(function(){
-  setTimeout(function(){
-    $('html, body')
-    .css({
-      'overflow': 'auto'
-    })
-    // .animate({
-    //   scrollTop: $('.myDiv').offset().top
-    // }, 2000);
-  }, 3500);
-  
-  
-});
-  </script>
-
-
-
 
 
 </body>
