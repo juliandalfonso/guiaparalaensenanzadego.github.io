@@ -1,9 +1,8 @@
 // AOSINIT--------------------------------------------------
 
 AOS.init();
-$(window).on('load', function () {
-  AOS.refresh();
-});
+
+setTimeout(function() { aosInit(); }, 10);
 
 // INTROJSINIT--------------------------------------------
 
@@ -21,6 +20,12 @@ $(window).on('load', function () {
   
 
 //FUNCTIONS---------------------------------------------
+   
+function aosInit()
+{
+  AOS.init();
+}
+    
 
 
 //AJUSTA LA POSICION DEL NAVBAR FIXED-TOP
@@ -30,5 +35,3 @@ $(document).ready(function(){
       $(document.body).css('padding-top', $('#topnavbar').height() + 10);
   });
 });
-
-
