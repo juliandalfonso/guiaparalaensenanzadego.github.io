@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -48,24 +48,25 @@
 
 <!-- ---------------------------codigo del ejemplo 1 ----------------------------------------------------------------->
 <pre class="prettyprint" style="background: #252A33; padding: 0 !important; font-size: 2vh;" id="codigoEjemplo1">
-    <span>package main</span>
-    <span data-step="1">import "fmt"</span>
-    <span data-step="2" data-intro="Creamos la función bla bla bla">func main() {</span>
-    <span data-step="3" data-intro="declaramos la variable ba bla">var animal string</span>
-    <span>fmt.Println("Elige felino, reptil,pez")</span>
-    <span>fmt.Scanln(&animal)</span>
-    <span>if animal == "felino" {</span>
-    <span data-step="4" data-intro="comentario">
-            {
-                fmt.Println("El animal es un felino")
-            } else if animal == "reptil" {
-                fmt.Println("El animal es un reptil")
-            } else if animal == "pez" {
-                fmt.Println("El animal es un pez")
-            } else {
-                fmt.Println("El animal es de otra categoria")
-            }
-        }</span>
+  <span>package main</span>
+  <span>import "fmt"</span>
+
+  <span data-step="1" data-intro="Creamos la función">func main() {</span>
+
+	<span data-step="2" data-intro="declaramos la variable animal como cadena">var animal string</span>
+	<span data-step="3" data-intro="Creamos el menu para el usuario">fmt.Println("Elige felino, reptil,pez")
+	fmt.Scanf(&animal)</span>
+	<span data-step="4" data-intro="Creamos la primera condición la cual verifica que el usuario haya ingresado felino">if animal == "felino" {
+			
+			fmt.Println("El animal es un felino")</span>
+			<sapn data-step="Se revisa la segunda condición"} else if animal == "reptil" {
+				fmt.Println("El animal es un reptil")</span>
+			<span>} else if animal == "pez" {
+				fmt.Println("El animal es un pez")</span>
+			<span data-step="5" data-intro="Si no coincidio con alguna de las condiciones anteriores entra al else">} else {
+				fmt.Println("El animal es de otra categoria")</span>
+			}
+		}
 </pre>
 
     <!-- OUTPUT del ejemplo 1 generado con javascript -->
