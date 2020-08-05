@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="645" height="400" viewBox="0 0 645 400">
+  <defs>
+    <clipPath id="clip-Mod11">
+      <rect width="645" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="Mod11" clip-path="url(#clip-Mod11)">
+    <rect width="645" height="400" fill="#262a33"/>
+    <circle id="Elipse_1" data-name="Elipse 1" cx="12.5" cy="12.5" r="12.5" transform="translate(27 23)" fill="#d9515d"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="12.5" cy="12.5" r="12.5" transform="translate(63 23)" fill="#f4c025"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="12.5" cy="12.5" r="12.5" transform="translate(99 23)" fill="#3ec930"/>
+    <text id="Módulo_11" data-name="Módulo 11" transform="translate(323 173)" fill="#aaa" font-size="70" font-family="Consolas"><tspan x="-173.188" y="0">Módulo 11</tspan></text>
+    <path id="icons8-active-directory" d="M41.565,3a6.077,6.077,0,0,0-5.635,8.376L21.087,30.457a6.081,6.081,0,0,0-5.611,9.785L7.219,60.9a6.092,6.092,0,1,0,5.647,2.259l7.395-18.487,7.395,18.475A6.091,6.091,0,1,0,33.3,60.9L25.034,40.229A6.016,6.016,0,0,0,25.9,34.19L40.739,15.109a5.291,5.291,0,0,0,1.658,0L57.234,34.19a6.063,6.063,0,0,0,.856,6.057L49.828,60.9a6.092,6.092,0,1,0,5.647,2.259L62.87,44.669l7.395,18.475A6.091,6.091,0,1,0,75.911,60.9L67.649,40.235a6.052,6.052,0,0,0-5.605-9.778L47.2,11.375A6.077,6.077,0,0,0,41.565,3Z" transform="translate(281 223.785)" fill="#aaa"/>
+  </g>
+</svg>
