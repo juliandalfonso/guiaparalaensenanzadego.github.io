@@ -1,7 +1,7 @@
 .introjs-overlay {
   position: absolute;
   z-index: 999999;
-  background: #525252;
+  background: #333333;
   opacity: 0;
 
   -webkit-transition: all 0.3s ease-out;
@@ -27,8 +27,8 @@
 .introjs-helperLayer {
   position: absolute;
   z-index: 9999998;
-  background-color: #FFF;
-  background-color: rgba(255,255,255,.9);
+  background-color: transparent;
+  background-color: rgba(255,255,255,.1);
   border: 1px solid #777;
   border: 3px solid rgba(255, 255, 255, 1);
   border-radius: 0;
@@ -49,20 +49,20 @@
   font-family: Arial, verdana, tahoma;
   font-size: 13px;
   font-weight: bold;
-  color: #DA4433; /* Old browsers */ /* Chrome10+,Safari5.1+ */
-  background: #FFFFFF;
+  color: #D9515D; /* Old browsers */ /* Chrome10+,Safari5.1+ */
+  background: #272b30;
   width: 20px;
   height:20px;
   text-align: center;
   line-height: 20px;
-  border: 3px solid #DA4433;
+  border: 3px solid #D9515D;
   border-right: none;
   border-bottom: none; /* IE6-9 */  /* IE10 text shadows */
   border-radius: 10px 0 0 0;
 }
 
 .introjs-arrow {
-  border: 5px solid white;
+  border: 5px solid #272b30;
   content:'';
   position: absolute;
 }
@@ -70,7 +70,7 @@
   top: -10px;
   border-top-color:transparent;
   border-right-color:transparent;
-  border-bottom-color: #ecf0f1;
+  border-bottom-color: #373B3F;
   border-left-color:transparent;
   display: none !important;
 }
@@ -80,11 +80,11 @@
   border-top-color:transparent;
   border-right-color:transparent;
   border-bottom-color:transparent;
-  border-left-color:#ecf0f1;
+  border-left-color:#373B3F;
 }
 .introjs-arrow.bottom {
   bottom: -10px;
-  border-top-color:#ecf0f1;
+  border-top-color:#373B3F;
   border-right-color:transparent;
   border-bottom-color:transparent;
   border-left-color:transparent;
@@ -93,7 +93,7 @@
   left: -10px;
   top: 10px;
   border-top-color:transparent;
-  border-right-color: #ecf0f1;
+  border-right-color: #373B3F;
   border-bottom-color:transparent;
   border-left-color:transparent;
 }
@@ -101,11 +101,11 @@
 .introjs-tooltip {
   position: fixed;
   padding: 10px 170px 30px 10px;
-  background-color: #ecf0f1;
+  background-color: #373B3F;
   min-width: 200px;
   max-width: 300px;
   /* border-radius: 3px; */
-  border-top: 3px solid #236591;
+  border-top: 3px solid #AAAAAA;
   box-shadow: 0 -6px 50px -4px rgba(0,0,0,.4);
   -webkit-transition: opacity 0.1s ease-out;
      -moz-transition: opacity 0.1s ease-out;
@@ -126,7 +126,7 @@
     margin-right: -10px;
     /* border-top: 1px solid #FFFFFF; */
     /* background: #FAFAFA; */
-    color: #2c3e50;
+    color: #fff;
     padding: 5px 10px;
     /* border-bottom: 1px solid #FFFFFF; */
 }
@@ -147,13 +147,13 @@
   overflow: visible;
   display: inline-block;
   padding: 0.5em 0.8em;
-  box-shadow: 0 2px 0px -0px #306588;
+  box-shadow: 0 2px 0px -0px #3a643a;
   margin: 0;
   outline: none;
-  background: #2980b9;
+  background: #62C462;
   text-decoration: none;
   font: 11px/normal sans-serif;
-  color: #fff !important;
+  color: transparent !important;
   white-space: nowrap;
   cursor: pointer;
   outline: none !important;
@@ -171,17 +171,17 @@
 }
 
 .introjs-button:hover {
-  color: #fff;
-  background: #2671A2;
+  color: #e9ecef;
+  /* background: #2671A2; */
   text-decoration: none;
-  box-shadow: 0 2px 0px -0px #235677;
+  box-shadow: 0 2px 0px -0px #6fc26f;
 }
 
 .introjs-button:focus,
 .introjs-button:active {
-    background: #23587A;  text-decoration: none;
+    background: #6fc26f;  text-decoration: none;
     /* bottom: -1px; */
-    box-shadow: 0 2px 0px 0px #173B53;
+    box-shadow: 0 2px 0px 0px #365c36;
 }
 
 /* overrides extra padding on button elements in Firefox */
@@ -192,7 +192,7 @@
 
 .introjs-skipbutton {
   margin-right: 5px;
-  color: #fff;
+  color: #aaaaaa;
   background: #e74c3c;
   box-shadow: 0 2px 0px -0px #B91D0D;
 }
@@ -222,11 +222,11 @@
 }
 
 .introjs-disabled, .introjs-disabled:hover, .introjs-disabled:focus {
-  color: #C2C2C2 !important;
-  border-color: #d4d4d4;
+  color: transparent !important;
+  border-color: #464a4e;
   cursor: default;
-  box-shadow: 0 2px 0px -0px #CACED1;
-  background-color: #E6E6E6;
+  box-shadow: 0 2px 0px -0px #464a4e;
+  background-color: #373b3f;
   background-image: none;
   text-decoration: none;
 }
@@ -253,7 +253,7 @@
   display: block;
   width: 6px;
   height: 6px;
-  background: #ccc;
+  background: #aaaaaa;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -263,7 +263,7 @@
   background: #999;
 }
 .introjs-bullets ul li a.active {
-  background: #999;
+  background: #fff;
 }
 
 .introjs-progress {
@@ -273,7 +273,7 @@
   background-color: #fff;
 }
 .introjs-progressbar {
-  background-color: #2980b9;
+  background-color: #62C462;
 }
 
 .introjsFloatingElement {
