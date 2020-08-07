@@ -178,7 +178,7 @@ function runnerejemplo_1(e) {
   e.target.removeEventListener(e.type, arguments.callee);//borramos el event listener para que no se vuelva a ejecutar esta funcion
  
   document.getElementById("rundivejemplo_1").insertAdjacentHTML("afterend",
-    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>hello world!</p></span>");
+    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>hello world!</p></span><input type='text'>");
   document.querySelector('#prompt').className = 'animate__animated animate__bounce text-success ml-4';
 }
 
@@ -217,4 +217,5 @@ copyclipEjemplo1.on('success', function (e) {
 
 
 </html>
+
 
