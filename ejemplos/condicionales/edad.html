@@ -49,51 +49,51 @@
   <div id="cardEjemplo1" class="card ">
 
     <!-- titulo del ejemplo -->
-    <h5 class="card-title text-center py-2">animales.go</h5>
+    <h6 class="card-title text-center p-1" style="margin-bottom: 0;">Ejemplo 2</h6> 
    
 
 
-  <div class="row" style="background:#23241F;">
-    <!-- terminal del ejemplo1 -->
-    <div class="container mx-auto col-lg-6">
-      <pre  id="codigoEjemplo1">
-        <code class="golang" style="font-size: 2vh;">
-          <span>package main</span>
-
-          <span>import "fmt"</span>
-          
-          <span>func main() {</span>
-          
-            <span  data-step="1" data-intro="Se declara la variable edad tipo entero">var edad int</span>
-            <span data-step="2" data-intro="Se le piden al usuario los datos">fmt.Println("Ingrese su edad")
-            fmt.Scanf("%d", &edad)</span>
-            <span data-step="3" data-intro="Si se cumplen ambas condiciones se imprime el texto en pantalla">if edad >= 17 && edad <= 58 {
-              <span>fmt.Println("Estás en edad de trabajar")</span>
-            <span data-step="4" data-intro="Si no se cumple la anterior condición se revisa el else if">} else if edad < 17 {
-              fmt.Println("Eres muy joven para trabajar")</span>
-            <span data-step="5" data-intro="Si no se cumple ninguna de las condiciones anteriores se ejecuta el else">} else {
-              fmt.Println("Estás ya jubilado")<span>
-            }
-          }
-
-          
-        </code>
-      </pre>
-    </div>
-    <div class="container col-lg-6 my-auto">
-      <h1 class="text-center">Ejemplo 2</h1>
-      <div class="container">
-        <p class="text-center">Cree un programa en el cual dependiendo de la edad indique si la persona puede trabajar o no.</p>
-
-      </div>
-      <div id="rundivejemplo_1"></div>
-    </div>
     
-</div>
-
-
+    
     <div class="card-body">
+      
+      <div class="row" style="background:#23241F;">
+        <!-- terminal del ejemplo1 -->
+        <div class="container mx-auto col-lg-8">
+          <pre  id="codigoEjemplo1">
+<code class="golang" style="font-size: 2.2vh;">
+  <span>package main</span>
 
+  <span>import "fmt"</span>
+  
+  <span>func main() {</span>
+  
+    <span  data-step="1" data-intro="Se declara la variable edad tipo entero">var edad int</span>
+    <span data-step="2" data-intro="Se le piden al usuario los datos">fmt.Println("Ingrese su edad")
+    fmt.Scanf("%d", &edad)</span>
+    <span data-step="3" data-intro="Si se cumplen ambas condiciones se imprime el texto en pantalla">if edad >= 17 && edad <= 58 {
+      <span>fmt.Println("Estás en edad de trabajar")</span>
+    <span data-step="4" data-intro="Si no se cumple la anterior condición se revisa el else if">} else if edad < 17 {
+      fmt.Println("Eres muy joven para trabajar")</span>
+    <span data-step="5" data-intro="Si no se cumple ninguna de las condiciones anteriores se ejecuta el else">} else {
+      fmt.Println("Estás ya jubilado")<span>
+    }
+  }
+
+  
+</code>
+          </pre>
+        </div>
+        <div class="container col-lg-4 my-auto">
+          <h1 class="text-center h4">Edad.go</h1>
+          <div class="container">
+            <p class="text-center">Cree un programa en el cual dependiendo de la edad indique si la persona puede trabajar o no.</p>
+    
+          </div>
+          <div id="rundivejemplo_1"></div>
+        </div>
+        
+    </div>
             <div class="container">
                 <div class=" d-flex justify-content-around">
 

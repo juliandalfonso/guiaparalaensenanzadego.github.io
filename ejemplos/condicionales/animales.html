@@ -49,96 +49,52 @@
   <div id="cardEjemplo1" class="card ">
 
     <!-- titulo del ejemplo -->
-    <h5 class="card-title text-center py-2">animales.go</h5>
-   
-
-
-  <div class="row" style="background:#23241F;">
-    <!-- terminal del ejemplo1 -->
-    <div class="container mx-auto col-lg-6">
-      <pre  id="codigoEjemplo1">
-        <code class="golang" style="font-size: 2vh;">
-
-          <span>package main</span>
-
-          <span>import "fmt"</span>
-          
-          <span data-step="1" data-intro="Creamos la función">func main() {</span>
-          <span></span>
-            <span data-step="2" data-intro="Declaramos la variable animal tipo string">var animal string</span>
-            <span data-step="3" data-intro="Creamos el menu para el usuario">fmt.Println("Elige felino, reptil,pez")
-            <span></span>(&animal)</span>
-            <span data-step="4" data-intro="En la primera condición (if) se verifica que el usuario haya ingresado felino, si coincide se imprime el texto de la linea 12">if animal == "felino" {
-                {
-                   fmt.Println("El animal es un felino")</span>
-                <span> data-step="Se revisa la segunda condición"} else if animal == "reptil" {
-                  fmt.Println("El animal es un reptil")</span>
-                <span>} else if animal == "pez" {</span>
-                  <span>fmt.Println("El animal es un pez")</span>
-                <span> data-step="5" data-intro="Si no coincidio con alguna de las condiciones anteriores ejecuta el else">} else {
-                  <span>fmt.Println("El animal es de otra categoria")</span>
-
-                }
-            }
-          
-        </code>
-      </pre>
-    </div>
-    <div class="container col-lg-6 my-auto">
-
-      <h1 class="text-center">Ejemplo 1</h1>
-      <div class="container">
-        <p class="text-center">Programa que muestra que tipo de animal selecciono el usuario</p>
-
- 
-      </div>
-      <div id="rundivejemplo_1"></div>
-    </div>
-    
-</div>
-
-
-    <div class="card-body">
+    <h6 class="card-title text-center p-1" style="margin-bottom: 0;">Ejemplo 1</h6>    
+    <div class="card-body" >
+      
       <div class="row" style="background:#23241F;">
         <!-- terminal del ejemplo1 -->
-        <div class="container mx-auto col-lg-6">
+        <div class="container mx-auto col-lg-8">
           <pre  id="codigoEjemplo1">
-            <code class="golang" style="font-size: 2vh;">
+<code class="golang" style="font-size: 2.2vh;">
+
   <span>package main</span>
 
   <span>import "fmt"</span>
+  
+  <span data-step="1" data-intro="Creamos la función">func main() {</span>
+  <span></span>
+    <span data-step="2" data-intro="Declaramos la variable animal tipo string">var animal string</span>
+    <span data-step="3" data-intro="Creamos el menu para el usuario">fmt.Println("Elige felino, reptil,pez")
+    <span></span>(&animal)</span>
+    <span data-step="4" data-intro="En la primera condición (if) se verifica que el usuario haya ingresado felino, si coincide se imprime el texto de la linea 12">if animal == "felino" {
+        {
+            fmt.Println("El animal es un felino")</span>
+        <span> data-step="Se revisa la segunda condición"} else if animal == "reptil" {
+          fmt.Println("El animal es un reptil")</span>
+        <span>} else if animal == "pez" {</span>
+          <span>fmt.Println("El animal es un pez")</span>
+        <span data-step="5" data-intro="Si no coincidio con alguna de las condiciones anteriores ejecuta el else">} else {
+          <span>fmt.Println("El animal es de otra categoria")</span>
 
-  <span>func main() {</span>
-      <span data-step="1" data-intro="Declaramos la variabe clasificacion como entero">var calificacion int</span>
-      <span data-step="2" data-intro="Imprimimos y pedimos el dato">fmt.Println("Ingrese su calificación")
-      fmt.Scanf("%d", &calificacion)</span>
-      <span data-step="3" data-intro="Esta es la primera condición, se se cumple se imprime 'excelente'">if calificacion >= 90 {
-          fmt.Println("Excelente")</span>
-      <span data-step="4" data-intro="Si no se cumple la primera condición se evalúa esta">} else if calificacion >= 70 {
-          fmt.Println("Muy bien")</span>
-      <span data-step="5" data-intro="El programa va evaluando tramopor tramo para ver en donde se cumple la condición">} else if calificacion >= 50 {
-          fmt.Println("Regular")</span>
-      } else if calificacion >= 30 {
-          fmt.Println("Malo")
-      } else if calificacion >= 10 {
-          fmt.Println("Malísimo")
-      <span data-step="6" data-intro="Si no se cumplio ninguna de las condiciones anteriores entra al else, es decir la última opción e imprime en pantalla">} else {
-          fmt.Println("Sin palabras")</span>
-      }
-  }
-            </code>
+        }
+    }
+  
+</code>
           </pre>
         </div>
-        <div class="container col-lg-6 my-auto">
-          <h1 class="text-center">Enunciado</h1>
+        <div class="container col-lg-4 my-auto">
+    
+          <h1 class="text-center h4">animales.go</h1>
           <div class="container">
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, excepturi! Esse culpa sequi voluptas quasi ut, laboriosam accusamus explicabo facilis eaque quis officiis tempore aspernatur laborum error mollitia iusto atque.</p>
+            <p class="text-center">Programa que muestra que tipo de animal selecciono el usuario</p>
+    
+     
           </div>
           <div id="rundivejemplo_1"></div>
         </div>
         
     </div>
-
             <div class="container">
                 <div class=" d-flex justify-content-around">
 
