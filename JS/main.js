@@ -2,30 +2,13 @@
 
 setTimeout(function() { aosInit(); }, 1000);
 
-// INTROJSINIT--------------------------------------------
-
-// introJs().start();
-// TERMINALSINIT----------------------------------------------
-// var termynal = new Termynal('#termynal', { typeDelay: 10 })
 
 
-
-//QUERYSELECTORS---------------------------------------------
-    
-    
-
-//EVENTLISTENERS---------------------------------------------
-  
-
-//FUNCTIONS---------------------------------------------
-   
+//inicia las animaciones de scroll 
 function aosInit()
 {
   AOS.init();
 }
-
-
-
 
 
 //codigo que corrige el navbar de hacer overflow
