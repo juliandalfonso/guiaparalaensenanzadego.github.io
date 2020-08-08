@@ -30,51 +30,72 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
+    <!-- HIGHLIGHT.JS -->
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/monokai-sublime.min.css" integrity="sha512-8irWeigPA1Pm20tgaynUtqbAQ/zvOizMj7Olu0sF9kQTGabFfvlAHUqhslzHwr7OZO6Z0IN6VoXAALzipXIwgA==" crossorigin="anonymous" />
+
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="../../CSS/estilos.css">
 
 
-
-
 </head>
 
-<div id="cardEjemplo1" class="card ">
+
+
+
+<body>
+  
+  <div id="cardEjemplo1" class="card ">
 
     <!-- titulo del ejemplo -->
     <h5 class="card-title text-center py-2">animales.go</h5>
    
+
+
+  <div class="row" style="background:#23241F;">
     <!-- terminal del ejemplo1 -->
-    <div id="termynalEjemplo1" data-termynal class="mx-auto" style=" margin: 0 !important; width: 100%;">
+    <div class="container mx-auto col-lg-6">
+      <pre  id="codigoEjemplo1">
+        <code class="golang" style="font-size: 2vh;">
+          <span>package main</span>
 
-<!-- ---------------------------codigo del ejemplo 1 ----------------------------------------------------------------->
-<pre class="prettyprint" style="background: #252A33; padding: 0 !important; font-size: 2vh;" id="codigoEjemplo1">
-  <span>package main</span>
-  <span>import "fmt"</span>
+          <span>import "fmt"</span>
+          
+          <span data-step="1" data-intro="Creamos la función">func main() {</span>
+          <span></span>
+            <span data-step="2" data-intro="Declaramos la variable animal tipo string">var animal string</span>
+            <span data-step="3" data-intro="Creamos el menu para el usuario">fmt.Println("Elige felino, reptil,pez")
+            <span></span>(&animal)</span>
+            <span data-step="4" data-intro="En la primera condición (if) se verifica que el usuario haya ingresado felino, si coincide se imprime el texto de la linea 12">if animal == "felino" {
+                {
+                   fmt.Println("El animal es un felino")</span>
+                <span> data-step="Se revisa la segunda condición"} else if animal == "reptil" {
+                  fmt.Println("El animal es un reptil")</span>
+                <span>} else if animal == "pez" {</span>
+                  <span>fmt.Println("El animal es un pez")</span>
+                <span> data-step="5" data-intro="Si no coincidio con alguna de las condiciones anteriores ejecuta el else">} else {
+                  <span>fmt.Println("El animal es de otra categoria")</span>
+                }
+            }
+          
+        </code>
+      </pre>
+    </div>
+    <div class="container col-lg-6 my-auto">
+      <h1 class="text-center">Ejemplo 1</h1>
+      <div class="container">
+        <p class="text-center">Programa que muestra que tipo de animal selecciono el usuario</p>
+      </div>
+      <div id="rundivejemplo_1"></div>
+    </div>
+    
+</div>
 
-  <span data-step="1" data-intro="Creamos la función">func main() {</span>
 
-	<span data-step="2" data-intro="declaramos la variable animal como cadena">var animal string</span>
-	<span data-step="3" data-intro="Creamos el menu para el usuario">fmt.Println("Elige felino, reptil,pez")
-	fmt.Scanf(&animal)</span>
-	<span data-step="4" data-intro="Creamos la primera condición la cual verifica que el usuario haya ingresado felino">if animal == "felino" {
-			
-    fmt.Println("El animal es un felino")</span>
-    <sapn data-step="Se revisa la segunda condición">} else if animal == "reptil" {
-      fmt.Println("El animal es un reptil")</span>
-    <span>} else if animal == "pez" {
-      fmt.Println("El animal es un pez")</span>
-    <span data-step="5" data-intro="Si no coincidio con alguna de las condiciones anteriores entra al else">} else {
-      fmt.Println("El animal es de otra categoria")</span>
-    }
-  }
-</pre>
+    <div class="card-body">
 
-    <!-- OUTPUT del ejemplo 1 generado con javascript -->
-    <div id="rundivejemplo_1"> </div>
-
-        </div>
-        
-            <div class="card-body container">
+            <div class="container">
                 <div class=" d-flex justify-content-around">
 
                     <a href="#" class="btn btn-outline-info  mt-2 prev" data-clipboard-target="#codigoEjemplo1"
@@ -94,10 +115,12 @@
                     </a>
                 </div>
             </div>
+      </div>
  
 
 </div>
 
+</body>
 
 
 
@@ -113,9 +136,9 @@ integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0J
 </script>
 
 <!-- PRETTIFYJS -->
-<script
+<!-- <script
 src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=go&amp;skin=desert">
-</script>
+</script> -->
 
 <!-- INTROJS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.min.js"></script>
@@ -145,6 +168,13 @@ crossorigin="anonymous"></script>
 <!-- SortableJS -->
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 
+<!-- ACE.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" integrity="sha512-GZ1RIgZaSc8rnco/8CXfRdCpDxRCphenIiZ2ztLy3XQfCbQUSCuk8IudvNHxkRA3oUg6q0qejgN/qqyG1duv5Q==" crossorigin="anonymous"></script>
+
+<!-- HIGHLIGHT.JS -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.6.0/dist/highlightjs-line-numbers.min.js"></script>
+
 
 <script>
     AOS.init();
@@ -155,11 +185,13 @@ const runejemplo_1 = document.querySelector('#runejemplo_1');
 const debugejemplo_1 = document.querySelector('#debugejemplo_1');
 const copyejemplo_1 = document.querySelector('#copyejemplo_1');
 
+
 // Selecciona todos los botones que haya que quitarle el default--------------------------------------
 const previeneDefault = document.getElementsByClassName('prev');
 
 // event listeners ejemplo 1-------------------------------------------------------------------
 runejemplo_1.addEventListener('click', runnerejemplo_1);
+
 
 debugejemplo_1.addEventListener('click', debugerejemplo_1);
 
@@ -178,15 +210,42 @@ function runnerejemplo_1(e) {
   e.target.removeEventListener(e.type, arguments.callee);//borramos el event listener para que no se vuelva a ejecutar esta funcion
  
   document.getElementById("rundivejemplo_1").insertAdjacentHTML("afterend",
-    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>hello world!</p></span>");
+    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>Ingrese su calificación</p></span><input id='inputResultado' type='text' class='bg-dark ml-4 text-secondary'><p id='resultado' class='ml-4 mt-2'></p>");
   document.querySelector('#prompt').className = 'animate__animated animate__bounce text-success ml-4';
+  const inputResultado = document.querySelector('#inputResultado');
+  const resultado = document.querySelector('#resultado');
+  inputResultado.addEventListener('keyup', escribeResultado);
 }
+
+//funcion que escribe el resultado según la digitación del usuario
+function escribeResultado(e)
+{
+  // resultado.innerText = inputResultado.value;
+
+    if (inputResultado.value >= 90) {
+      resultado.innerText = 'Excelente'
+    } else if (inputResultado.value >= 70) {
+      resultado.innerText = 'Muy bien'
+    } else if (inputResultado.value >= 50) {
+      resultado.innerText = 'Regular'
+    } else if (inputResultado.value >= 30) {
+      resultado.innerText = 'Malo'
+    } else if (inputResultado.value >= 10) {
+      resultado.innerText = 'Malísimo'
+    } else {
+      resultado.innerText = 'Sin Palábras'
+    }  
+
+  
+}
+
 
 
 //Ejecuta IntroJS en el ejemplo_1 
 function debugerejemplo_1(e) {
   e.preventDefault();
   introJs().start();
+  console.log('entra');
 }
 
 //funcion que elimina todas las funciones por defecto 
@@ -208,6 +267,15 @@ copyclipEjemplo1.on('success', function (e) {
   e.clearSelection();
 });
 
+// var editor = ace.edit("editor");
+//     editor.setTheme("ace/theme/monokai");
+//     editor.session.setMode("ace/mode/golang");
+
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
+
+
+
 
 
 </script>
@@ -217,4 +285,5 @@ copyclipEjemplo1.on('success', function (e) {
 
 
 </html>
+
 
