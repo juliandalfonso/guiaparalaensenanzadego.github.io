@@ -58,6 +58,7 @@
     <div class="container mx-auto col-lg-6">
       <pre  id="codigoEjemplo1">
         <code class="golang" style="font-size: 2vh;">
+
           <span>package main</span>
 
           <span>import "fmt"</span>
@@ -86,13 +87,16 @@
               fmt.Println("Opcion no valida")</span>
             }
           }
+
         </code>
       </pre>
     </div>
     <div class="container col-lg-6 my-auto">
+
       <h1 class="text-center">Ejemplo 6</h1>
       <div class="container">
         <p class="text-center">Cree un programa que genere un menú con dos opciones, la primera pasar de pulgadas a centimetros y la segunda opción pasar de libras a kilos.</p>
+
       </div>
       <div id="rundivejemplo_1"></div>
     </div>
@@ -245,6 +249,29 @@ function escribeResultado(e)
 
   
 }
+
+//funcion que escribe el resultado según la digitación del usuario
+function escribeResultado(e)
+{
+  // resultado.innerText = inputResultado.value;
+
+    if (inputResultado.value >= 90) {
+      resultado.innerText = 'Excelente'
+    } else if (inputResultado.value >= 70) {
+      resultado.innerText = 'Muy bien'
+    } else if (inputResultado.value >= 50) {
+      resultado.innerText = 'Regular'
+    } else if (inputResultado.value >= 30) {
+      resultado.innerText = 'Malo'
+    } else if (inputResultado.value >= 10) {
+      resultado.innerText = 'Malísimo'
+    } else {
+      resultado.innerText = 'Sin Palábras'
+    }  
+
+  
+}
+
 
 
 

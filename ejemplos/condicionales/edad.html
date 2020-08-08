@@ -75,6 +75,7 @@
               fmt.Println("Estás ya jubilado")<span>
             }
           }
+
           
         </code>
       </pre>
@@ -83,6 +84,7 @@
       <h1 class="text-center">Ejemplo 2</h1>
       <div class="container">
         <p class="text-center">Cree un programa en el cual dependiendo de la edad indique si la persona puede trabajar o no.</p>
+
       </div>
       <div id="rundivejemplo_1"></div>
     </div>
@@ -234,7 +236,31 @@ function escribeResultado(e)
     }  
 
   
+
 }
+
+//funcion que escribe el resultado según la digitación del usuario
+function escribeResultado(e)
+{
+  // resultado.innerText = inputResultado.value;
+
+    if (inputResultado.value >= 90) {
+      resultado.innerText = 'Excelente'
+    } else if (inputResultado.value >= 70) {
+      resultado.innerText = 'Muy bien'
+    } else if (inputResultado.value >= 50) {
+      resultado.innerText = 'Regular'
+    } else if (inputResultado.value >= 30) {
+      resultado.innerText = 'Malo'
+    } else if (inputResultado.value >= 10) {
+      resultado.innerText = 'Malísimo'
+    } else {
+      resultado.innerText = 'Sin Palábras'
+    }  
+
+  
+}
+
 
 
 
