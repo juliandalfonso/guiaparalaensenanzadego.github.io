@@ -41,72 +41,63 @@
 
 </head>
 
-
-
-
-
-
-
-
-
-
 <body>
   
   <div id="cardEjemplo1" class="card ">
 
     <!-- titulo del ejemplo -->
-    <h5 class="card-title text-center py-2">animales.go</h5>
+    <h6 class="card-title text-center p-1" style="margin-bottom: 0;">Ejemplo 4</h6> 
    
 
-
-  <div class="row" style="background:#23241F;">
-    <!-- terminal del ejemplo1 -->
-    <div class="container mx-auto col-lg-6">
-      <pre  id="codigoEjemplo1">
-        <code class="golang" style="font-size: 2vh;">
-
-          <span>package main</span>
-
-          <span>import "fmt"</span>
-          <span></span>
-          <span>func main() {</span>
-            <span data-step="1" data-intro="Declaramos la variaboe calificacion tipo entero">var calificacion int</span>
-            <span data-step="2" data-intro="Imprimimos el texto y pedimos el dato">fmt.Println("Ingrese su calificación")
-            fmt.Scanf("%d", &calificacion)</span>
-            <span data-step="3" data-intro="Esta es la primera condición, si se cumple se imprime 'excelente'">if calificacion >= 90 {
-              fmt.Println("Excelente")</span>
-            <span data-step="4" data-intro="Si no se cumple la primera condición se evalúa la siguiente, es decir, la de la linea 11">} else if calificacion >= 70 {
-              fmt.Println("Muy bien")</span>
-            <span data-step="5" data-intro="El programa va evaluando tramo por tramo para ver en donde se cumple la condición">} else if calificacion >= 50 {
-              fmt.Println("Regular")</span>
-            <span>} else if calificacion >= 30 {</span>
-              <span>fmt.Println("Malo")</span>
-            <span>} else if calificacion >= 10 {</span>
-              <span> fmt.Println("Malísimo")</span>
-            <span data-step="6" data-intro="Si no se cumplio ninguna de las condiciones anteriores entra al else, es decir la última opción e imprime el texto de la linea 20">} else {
-              <span>("Sin palabras")</span>
-            }
-          }
-
-          
-        </code>
-      </pre>
-    </div>
-    <div class="container col-lg-6 my-auto">
-
-      <h1 class="text-center">Ejemplo 4</h1>
-      <div class="container">
-        <p class="text-center">Cree un programa que dependiendo de la calificación ingresada por el usuario arroje una frase.</p>
-
-      </div>
-      <div id="rundivejemplo_1"></div>
-    </div>
     
-</div>
-
-
+    
     <div class="card-body">
+      
+        <div class="row" style="background:#23241F;">
+          <!-- terminal del ejemplo1 -->
+          <div class="container  col-lg-8">
+            <pre  id="codigoEjemplo1">
+<code class="golang" style="font-size: 2vh;">
 
+  <span>package main</span>
+
+  <span>import "fmt"</span>
+  <span></span>
+  <span>func main() {</span>
+    <span data-step="1" data-intro="Declaramos la variaboe calificacion tipo entero">var calificacion int</span>
+    <span data-step="2" data-intro="Imprimimos el texto y pedimos el dato">fmt.Println("Ingrese su calificación")
+    fmt.Scanf("%d", &calificacion)</span>
+    <span data-step="3" data-intro="Esta es la primera condición, si se cumple se imprime 'excelente'">if calificacion >= 90 {
+      fmt.Println("Excelente")</span>
+    <span data-step="4" data-intro="Si no se cumple la primera condición se evalúa la siguiente, es decir, la de la linea 11">} else if calificacion >= 70 {
+      fmt.Println("Muy bien")</span>
+    <span data-step="5" data-intro="El programa va evaluando tramo por tramo para ver en donde se cumple la condición">} else if calificacion >= 50 {
+      fmt.Println("Regular")</span>
+    <span>} else if calificacion >= 30 {</span>
+      <span>fmt.Println("Malo")</span>
+    <span>} else if calificacion >= 10 {</span>
+      <span> fmt.Println("Malísimo")</span>
+    <span data-step="6" data-intro="Si no se cumplio ninguna de las condiciones anteriores entra al else, es decir la última opción e imprime el texto de la linea 20">} else {
+      <span>("Sin palabras")</span>
+    }
+  }
+
+  
+</code>
+            </pre>
+          </div>
+          <div class="container col-lg-4 my-auto">
+      
+            <h1 class="text-center h4">Calificaciones.go</h1>
+            <div class="container">
+              <p class="text-center">Cree un programa que dependiendo de la calificación ingresada por el usuario arroje una frase.</p>
+      
+            </div>
+            <div id="rundivejemplo_1"></div>
+          </div>
+          
+      </div>
+      
             <div class="container">
                 <div class=" d-flex justify-content-around">
 

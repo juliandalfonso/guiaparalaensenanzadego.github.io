@@ -35,7 +35,7 @@
 
 p.separator {
     line-height:1em;
-    border-bottom:1px solid green;
+    border-bottom:1px solid #62C362;
 }
 p.separator:before {
     content:"OUTPUT";
@@ -45,7 +45,7 @@ p.separator:before {
     padding:0 0.3em;
     top:0.5em;
     background:#23241F;
-    color: green;
+    color: #62C362;
 }
 
 .btn-color{

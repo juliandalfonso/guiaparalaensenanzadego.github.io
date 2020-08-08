@@ -49,62 +49,62 @@
   <div id="cardEjemplo1" class="card ">
 
     <!-- titulo del ejemplo -->
-    <h5 class="card-title text-center py-2">animales.go</h5>
+    <h6 class="card-title text-center p-1" style="margin-bottom: 0;">Ejemplo 6</h6> 
    
 
-
-  <div class="row" style="background:#23241F;">
-    <!-- terminal del ejemplo1 -->
-    <div class="container mx-auto col-lg-6">
-      <pre  id="codigoEjemplo1">
-        <code class="golang" style="font-size: 2vh;">
-
-          <span>package main</span>
-
-          <span>import "fmt"</span>
-          
-          <span>func main() {</span>
-            <span data-setp="1" data-intro="Se declara la variable x tipo entero">var x int</span>
-            <span data-step="2" data-intro="Se declaran las variables tipo flotantes">var pulgadas, kilo, distancia, peso float32</span>
-            <span data-step="3" data-intro="Se crea el menú para el usuario">fmt.Println("Que desea convertir, distancia o peso?")
-            fmt.Println("Escriba 1 para distancia o 2 para peso")
-            fmt.Scanf("%b", &x)</span>
-          
-            <span data-step="4" data-intro="Switch indica que la variable a evaluar en todos los casos va a ser x">switch x {</span>
-            <span data-step="5" data-intro="Si el usuario ingresa 1 se ejecutan las siguientes lineas">case 1:</span>
-              <span>fmt.Println("Ingrese la distancia en centimetros")</span>
-              <span data-step="6" data-intro="Se le pide al usuario la distancia en cm">fmt.Scanf("%b", &distancia)</span>
-              <span  data-step ="7" data-intro="Se le asigna a pulgada el valor de la division entre el dato ingresado por el usuario y 2.54">pulgadas = distancia / 2.54</span>
-              <span data-step="8" data-intro="Se imprime el resultado de la operación">fmt.Printf("Las pulgadas son: %b ", pulgadas)</span>
-              <span  data-step="9" data-intro="La palabra break se usa para indicar que termina el caso">break</span>
-            <span  data-step="10" data-intro="Se hace lo mismo que en el caso 1, pero aqui se convierte de libras a kilos">case 2:
-              ("Ingrese el peso en libras")
-              fmt.Scanf("%b", &peso)
-            kilo = peso * (1 / 2.21)
-              fmt.Printf("Las kilogramos son: %b", kilo)
-              break</span>
-            <span data-step="11" data-intro="El default se utiliza como ultimo caso, y solo se toma en cuenta cuando no se ha cumplido ninguno de los casos anteriores">default:
-              fmt.Println("Opcion no valida")</span>
-            }
-          }
-
-        </code>
-      </pre>
-    </div>
-    <div class="container col-lg-6 my-auto">
-
-      <h1 class="text-center">Ejemplo 6</h1>
-      <div class="container">
-        <p class="text-center">Cree un programa que genere un menú con dos opciones, la primera pasar de pulgadas a centimetros y la segunda opción pasar de libras a kilos.</p>
-
-      </div>
-      <div id="rundivejemplo_1"></div>
-    </div>
     
-</div>
-
-
+    
     <div class="card-body">
+      
+        <div class="row" style="background:#23241F;">
+          <!-- terminal del ejemplo1 -->
+          <div class="container col-lg-8">
+            <pre  id="codigoEjemplo1">
+<code class="golang" style="font-size: 2vh;">
+
+  <span>package main</span>
+
+  <span>import "fmt"</span>
+  
+  <span>func main() {</span>
+    <span data-setp="1" data-intro="Se declara la variable x tipo entero">var x int</span>
+    <span data-step="2" data-intro="Se declaran las variables tipo flotantes">var pulgadas, kilo, distancia, peso float32</span>
+    <span data-step="3" data-intro="Se crea el menú para el usuario">fmt.Println("Que desea convertir, distancia o peso?")
+    fmt.Println("Escriba 1 para distancia o 2 para peso")
+    fmt.Scanf("%b", &x)</span>
+  
+    <span data-step="4" data-intro="Switch indica que la variable a evaluar en todos los casos va a ser x">switch x {</span>
+    <span data-step="5" data-intro="Si el usuario ingresa 1 se ejecutan las siguientes lineas">case 1:</span>
+      <span>fmt.Println("Ingrese la distancia en centimetros")</span>
+      <span data-step="6" data-intro="Se le pide al usuario la distancia en cm">fmt.Scanf("%b", &distancia)</span>
+      <span  data-step ="7" data-intro="Se le asigna a pulgada el valor de la division entre el dato ingresado por el usuario y 2.54">pulgadas = distancia / 2.54</span>
+      <span data-step="8" data-intro="Se imprime el resultado de la operación">fmt.Printf("Las pulgadas son: %b ", pulgadas)</span>
+      <span  data-step="9" data-intro="La palabra break se usa para indicar que termina el caso">break</span>
+    <span  data-step="10" data-intro="Se hace lo mismo que en el caso 1, pero aqui se convierte de libras a kilos">case 2:
+      ("Ingrese el peso en libras")
+      fmt.Scanf("%b", &peso)
+    kilo = peso * (1 / 2.21)
+      fmt.Printf("Las kilogramos son: %b", kilo)
+      break</span>
+    <span data-step="11" data-intro="El default se utiliza como ultimo caso, y solo se toma en cuenta cuando no se ha cumplido ninguno de los casos anteriores">default:
+      fmt.Println("Opcion no valida")</span>
+    }
+  }
+
+</code>
+            </pre>
+          </div>
+          <div class="container col-lg-4 my-auto">
+      
+            <h1 class="text-center h4">centimetros.go</h1>
+            <div class="container">
+              <p class="text-center">Cree un programa que genere un menú con dos opciones, la primera pasar de pulgadas a centimetros y la segunda opción pasar de libras a kilos.</p>
+      
+            </div>
+            <div id="rundivejemplo_1"></div>
+          </div>
+          
+      </div>
 
             <div class="container">
                 <div class=" d-flex justify-content-around">
