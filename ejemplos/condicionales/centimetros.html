@@ -58,36 +58,45 @@
     <div class="container mx-auto col-lg-6">
       <pre  id="codigoEjemplo1">
         <code class="golang" style="font-size: 2vh;">
-            <span>package main</span>
-        
-            <span>import "fmt"</span>
-            
-            <span>func main() {</span>
-                <span data-step="1" data-intro="Declaramos la variabe clasificacion como entero">var calificacion int</span>
-                <span data-step="2" data-intro="Imprimimos y pedimos el dato">fmt.Println("Ingrese su calificación")
-                fmt.Scanf("%d", &calificacion)</span>
-                <span data-step="3" data-intro="Esta es la primera condición, se se cumple se imprime 'excelente'">if calificacion >= 90 {
-                    fmt.Println("Excelente")</span>
-                <span data-step="4" data-intro="Si no se cumple la primera condición se evalúa esta">} else if calificacion >= 70 {
-                    fmt.Println("Muy bien")</span>
-                <span data-step="5" data-intro="El programa va evaluando tramopor tramo para ver en donde se cumple la condición">} else if calificacion >= 50 {
-                    fmt.Println("Regular")</span>
-                } else if calificacion >= 30 {
-                    fmt.Println("Malo")
-                } else if calificacion >= 10 {
-                    fmt.Println("Malísimo")
-                <span data-step="6" data-intro="Si no se cumplio ninguna de las condiciones anteriores entra al else, es decir la última opción e imprime en pantalla">} else {
-                    fmt.Println("Sin palabras")</span>
-                }
-            }
+
+          <span>package main</span>
+
+          <span>import "fmt"</span>
           
+          <span>func main() {</span>
+            <span data-setp="1" data-intro="Se declara la variable x tipo entero">var x int</span>
+            <span data-step="2" data-intro="Se declaran las variables tipo flotantes">var pulgadas, kilo, distancia, peso float32</span>
+            <span data-step="3" data-intro="Se crea el menú para el usuario">fmt.Println("Que desea convertir, distancia o peso?")
+            fmt.Println("Escriba 1 para distancia o 2 para peso")
+            fmt.Scanf("%b", &x)</span>
+          
+            <span data-step="4" data-intro="Switch indica que la variable a evaluar en todos los casos va a ser x">switch x {</span>
+            <span data-step="5" data-intro="Si el usuario ingresa 1 se ejecutan las siguientes lineas">case 1:</span>
+              <span>fmt.Println("Ingrese la distancia en centimetros")</span>
+              <span data-step="6" data-intro="Se le pide al usuario la distancia en cm">fmt.Scanf("%b", &distancia)</span>
+              <span  data-step ="7" data-intro="Se le asigna a pulgada el valor de la division entre el dato ingresado por el usuario y 2.54">pulgadas = distancia / 2.54</span>
+              <span data-step="8" data-intro="Se imprime el resultado de la operación">fmt.Printf("Las pulgadas son: %b ", pulgadas)</span>
+              <span  data-step="9" data-intro="La palabra break se usa para indicar que termina el caso">break</span>
+            <span  data-step="10" data-intro="Se hace lo mismo que en el caso 1, pero aqui se convierte de libras a kilos">case 2:
+              ("Ingrese el peso en libras")
+              fmt.Scanf("%b", &peso)
+            kilo = peso * (1 / 2.21)
+              fmt.Printf("Las kilogramos son: %b", kilo)
+              break</span>
+            <span data-step="11" data-intro="El default se utiliza como ultimo caso, y solo se toma en cuenta cuando no se ha cumplido ninguno de los casos anteriores">default:
+              fmt.Println("Opcion no valida")</span>
+            }
+          }
+
         </code>
       </pre>
     </div>
     <div class="container col-lg-6 my-auto">
-      <h1 class="text-center">Enunciado</h1>
+
+      <h1 class="text-center">Ejemplo 6</h1>
       <div class="container">
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, excepturi! Esse culpa sequi voluptas quasi ut, laboriosam accusamus explicabo facilis eaque quis officiis tempore aspernatur laborum error mollitia iusto atque.</p>
+        <p class="text-center">Cree un programa que genere un menú con dos opciones, la primera pasar de pulgadas a centimetros y la segunda opción pasar de libras a kilos.</p>
+
       </div>
       <div id="rundivejemplo_1"></div>
     </div>
@@ -240,6 +249,29 @@ function escribeResultado(e)
 
   
 }
+
+//funcion que escribe el resultado según la digitación del usuario
+function escribeResultado(e)
+{
+  // resultado.innerText = inputResultado.value;
+
+    if (inputResultado.value >= 90) {
+      resultado.innerText = 'Excelente'
+    } else if (inputResultado.value >= 70) {
+      resultado.innerText = 'Muy bien'
+    } else if (inputResultado.value >= 50) {
+      resultado.innerText = 'Regular'
+    } else if (inputResultado.value >= 30) {
+      resultado.innerText = 'Malo'
+    } else if (inputResultado.value >= 10) {
+      resultado.innerText = 'Malísimo'
+    } else {
+      resultado.innerText = 'Sin Palábras'
+    }  
+
+  
+}
+
 
 
 
