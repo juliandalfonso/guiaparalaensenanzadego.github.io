@@ -182,7 +182,7 @@ if(!Array.indexOf){
     
     // Adding the text and the placeholders (the drop-target places)
     for(var i=0; i<phNum; i++){
-      el2.append('<code class="golang">'+textItems[i]+'</code> <span id="'+
+      el2.append('<code class="codigohljs">'+textItems[i]+'</code> <span id="'+
                   opts.phId+i+
                   '" class="droppable-element quizy-fitb-droptarget">'+
                   placeHolder+'</span> ');
