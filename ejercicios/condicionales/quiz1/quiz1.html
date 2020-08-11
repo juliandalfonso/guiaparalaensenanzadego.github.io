@@ -17,7 +17,7 @@
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/monokai-sublime.min.css" integrity="sha512-8irWeigPA1Pm20tgaynUtqbAQ/zvOizMj7Olu0sF9kQTGabFfvlAHUqhslzHwr7OZO6Z0IN6VoXAALzipXIwgA==" crossorigin="anonymous" />
 
-      <link rel="stylesheet" href="../../CSS/quizyfillblank.css">
+      <link rel="stylesheet" href="../../../CSS/quizyfillblank.css">
 
     <style>
         body{
@@ -91,17 +91,17 @@ integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0J
           anItems:['"fmt"', 'main', 'George Washington', 'println', 'Harry Truman', 'Richard Nixon', 'Barack Obama' ], 
           anItemsCorrect:[1,0,3],
           blockSize:150
+          
         });
+       const codigo = document.querySelectorAll('code');
+for (let i = 0; i < codigo.length; i++) {
+
+  // hljs.highlightBlock($('code').get(i));
+  
+  
+}
 
 
-  </script>
-
-  <script> 
-    document.addEventListener('DOMContentLoaded', (event) => {
-  document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightBlock(block);
-  });
-});
   </script>
 
     
