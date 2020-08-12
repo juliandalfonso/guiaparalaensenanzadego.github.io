@@ -209,7 +209,7 @@ function runnerejemplo_1(e) {
   e.target.removeEventListener(e.type, arguments.callee);//borramos el event listener para que no se vuelva a ejecutar esta funcion
  
   document.getElementById("rundivejemplo_1").insertAdjacentHTML("afterend",
-    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>Ingrese su calificación</p></span><input id='inputResultado' type='text' class='bg-dark ml-4 text-secondary'><p id='resultado' class='ml-4 mt-2'></p>");
+    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>Ingrese su edad</p></span><input id='inputResultado' type='text' class='bg-dark ml-4 text-secondary'><p id='resultado' class='ml-4 mt-2'></p>");
   document.querySelector('#prompt').className = 'animate__animated animate__bounce text-success ml-4';
   const inputResultado = document.querySelector('#inputResultado');
   const resultado = document.querySelector('#resultado');
@@ -221,44 +221,16 @@ function escribeResultado(e)
 {
   // resultado.innerText = inputResultado.value;
 
-    if (inputResultado.value >= 90) {
-      resultado.innerText = 'Excelente'
-    } else if (inputResultado.value >= 70) {
-      resultado.innerText = 'Muy bien'
-    } else if (inputResultado.value >= 50) {
-      resultado.innerText = 'Regular'
-    } else if (inputResultado.value >= 30) {
-      resultado.innerText = 'Malo'
-    } else if (inputResultado.value >= 10) {
-      resultado.innerText = 'Malísimo'
+    if (inputResultado.value >= 17 && inputResultado.value <= 58) {
+      resultado.innerText = 'Estás en edad de trabajar'
+    } else if (inputResultado.value < 17) {
+      resultado.innerText = 'Eres muy joven para trabajar'
     } else {
-      resultado.innerText = 'Sin Palábras'
-    }  
+      resultado.innerText = 'Estás ya jubilado'
+    }
 
   
 
-}
-
-//funcion que escribe el resultado según la digitación del usuario
-function escribeResultado(e)
-{
-  // resultado.innerText = inputResultado.value;
-
-    if (inputResultado.value >= 90) {
-      resultado.innerText = 'Excelente'
-    } else if (inputResultado.value >= 70) {
-      resultado.innerText = 'Muy bien'
-    } else if (inputResultado.value >= 50) {
-      resultado.innerText = 'Regular'
-    } else if (inputResultado.value >= 30) {
-      resultado.innerText = 'Malo'
-    } else if (inputResultado.value >= 10) {
-      resultado.innerText = 'Malísimo'
-    } else {
-      resultado.innerText = 'Sin Palábras'
-    }  
-
-  
 }
 
 

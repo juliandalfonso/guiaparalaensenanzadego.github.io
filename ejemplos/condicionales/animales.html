@@ -65,10 +65,9 @@
   <span data-step="1" data-intro="Creamos la función">func main() {</span>
   <span></span>
     <span data-step="2" data-intro="Declaramos la variable animal tipo string">var animal string</span>
-    <span data-step="3" data-intro="Creamos el menu para el usuario">fmt.Println("Elige felino, reptil,pez")
-    <span></span>(&animal)</span>
+    <span data-step="3" data-intro="Creamos el menu para el usuario">fmt.Println("Elige: felino, reptil o pez")</span>
+    <span>fmt.Scanf("%s",&animal)</span>
     <span data-step="4" data-intro="En la primera condición (if) se verifica que el usuario haya ingresado felino, si coincide se imprime el texto de la linea 12">if animal == "felino" {
-        {
             fmt.Println("El animal es un felino")</span>
         <span> data-step="Se revisa la segunda condición"} else if animal == "reptil" {
           fmt.Println("El animal es un reptil")</span>
@@ -210,7 +209,7 @@ function runnerejemplo_1(e) {
   e.target.removeEventListener(e.type, arguments.callee);//borramos el event listener para que no se vuelva a ejecutar esta funcion
  
   document.getElementById("rundivejemplo_1").insertAdjacentHTML("afterend",
-    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>Ingrese su calificación</p></span><input id='inputResultado' type='text' class='bg-dark ml-4 text-secondary'><p id='resultado' class='ml-4 mt-2'></p>");
+    "<p class='separator'></p><span data-ty='input' data-ty-prompt=''><p id='prompt'>Elige: felino, reptil o pez</p></span><input id='inputResultado' type='text' class='bg-dark ml-4 text-secondary'><p id='resultado' class='ml-4 mt-2'></p>");
   document.querySelector('#prompt').className = 'animate__animated animate__bounce text-success ml-4';
   const inputResultado = document.querySelector('#inputResultado');
   const resultado = document.querySelector('#resultado');
@@ -222,18 +221,14 @@ function escribeResultado(e)
 {
   // resultado.innerText = inputResultado.value;
 
-    if (inputResultado.value >= 90) {
-      resultado.innerText = 'Excelente'
-    } else if (inputResultado.value >= 70) {
-      resultado.innerText = 'Muy bien'
-    } else if (inputResultado.value >= 50) {
-      resultado.innerText = 'Regular'
-    } else if (inputResultado.value >= 30) {
-      resultado.innerText = 'Malo'
-    } else if (inputResultado.value >= 10) {
-      resultado.innerText = 'Malísimo'
+    if (inputResultado.value == 'felino') {
+      resultado.innerText = 'El animal es un felino'
+    } else if (inputResultado.value == 'reptil') {
+      resultado.innerText = 'El animal es un reptil'
+    } else if (inputResultado.value == 'pez') {
+      resultado.innerText = 'El animal es un pez'
     } else {
-      resultado.innerText = 'Sin Palábras'
+      resultado.innerText = 'El animal es de otra categoria'
     }  
 
   
