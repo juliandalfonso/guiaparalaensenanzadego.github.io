@@ -90,11 +90,13 @@
     .star{
         
         position:relative;
+        
     }
     .star img{
         top:15px;
-        left:78%;
-        position:absolute;
+        left: 78%;
+        position:relative;
+        display: none;
     }
     .star img:nth-of-type(2){   margin-left:24px;   }
     .star img:nth-of-type(3){   margin-left:48px;   }
@@ -108,6 +110,7 @@
     .two_column label{
         display: inline-table;
         width:141px;
+        text-align: center;
     }
     label{
         font-size: 12px;
@@ -118,14 +121,13 @@
     }
 
     .expl{
-        position:absolute;
+        position:relative;
         background-color:#62c462;
         min-height:9px !important;
         max-height:9px;
         color: black;
         overflow:hidden;
         padding:10px;
-        width: 50%;
         
     }
     .expl p{
@@ -224,7 +226,7 @@
     
     
         <h6 class="text-center mt-4">¿que veríamos en pantalla al ejecutar el programa?</h6>
-    <div class="test row " data-test="false"  data-false="305,number,hola">
+    <div class="test row" data-test="false"  data-false="305,number,hola">
         <div class="star span6">
             <div class="numb" >999</div>
             <pre><code>
