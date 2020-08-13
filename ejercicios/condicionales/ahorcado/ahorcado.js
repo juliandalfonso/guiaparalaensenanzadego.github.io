@@ -218,7 +218,7 @@ window.onload = function () {
   
       var catagoryIndex = categories.indexOf(chosenCategory);
       var hintIndex = chosenCategory.indexOf(word);
-      showClue.innerHTML = "Clue: - " +  hints [catagoryIndex][hintIndex];
+      showClue.innerHTML = "Pista: - " +  hints [catagoryIndex][hintIndex];
     };
   
      // Reset
